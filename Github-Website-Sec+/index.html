@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SY0-701 Practice Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+    .question { display: none; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .active { display: block; }
+    .explanation { display: none; margin-top: 10px; padding: 10px; background: #e0ffe0; border-left: 4px solid green; }
+    .incorrect { background: #ffe0e0; border-left: 4px solid red; }
+    button { margin-top: 10px; padding: 8px 12px; }
+    #navigation { margin-top: 20px; }
+    #score { font-weight: bold; margin-top: 20px; font-size: 1.1em; }
+    header { text-align: center; }
+    footer { margin-top: 24px; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CompTIA Security+ SY0-701 Practice Quiz</h1>
+    <p>Interactive, client-side quiz suitable for GitHub Pages (static hosting). Use the navigation buttons to move between questions.</p>
+  </header>
+
+  <main id="quiz">
+    <!-- Question blocks (ids q0..q9) -->
+    <!-- Question 1 -->
+    <div class="question active" id="q0">
+      <p><strong>Question 1:</strong> A security engineer is installing a WAF to protect the company's website from malicious web requests over SSL. Which of the following is needed to meet the objective?</p>
+      <form>
+        <label><input type="radio" name="q0" value="A"> A. A reverse proxy</label><br>
+        <label><input type="radio" name="q0" value="B"> B. A decryption certificate</label><br>
+        <label><input type="radio" name="q0" value="C"> C. A spill-tunnel VPN</label><br>
+        <label><input type="radio" name="q0" value="D"> D. Load-balanced servers</label><br>
+      </form>
+      <button onclick="checkAnswer(0, 'B')">Submit Answer</button>
+      <div class="explanation" id="exp0"></div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question" id="q1">
+      <p><strong>Question 2:</strong> Which of the following BEST describes the concept of least privilege?</p>
+      <form>
+        <label><input type="radio" name="q1" value="A"> A. Users are granted access to only the resources they need to perform their job functions.</label><br>
+        <label><input type="radio" name="q1" value="B"> B. Users are given administrator access to all systems.</label><br>
+        <label><input type="radio" name="q1" value="C"> C. Users are allowed to access any system as long as they have a business justification.</label><br>
+        <label><input type="radio" name="q1" value="D"> D. Users are granted access based on their seniority in the organization.</label><br>
+      </form>
+      <button onclick="checkAnswer(1, 'A')">Submit Answer</button>
+      <div class="explanation" id="exp1"></div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question" id="q2">
+      <p><strong>Question 3:</strong> Which of the following authentication methods is considered to be the LEAST secure?</p>
+      <form>
+        <label><input type="radio" name="q2" value="A"> A. TOTP</label><br>
+        <label><input type="radio" name="q2" value="B"> B. SMS</label><br>
+        <label><input type="radio" name="q2" value="C"> C. HOTP</label><br>
+        <label><input type="radio" name="q2" value="D"> D. Token key</label><br>
+      </form>
+      <button onclick="checkAnswer(2, 'B')">Submit Answer</button>
+      <div class="explanation" id="exp2"></div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question" id="q3">
+      <p><strong>Question 4:</strong> A company wants to ensure that its employees can access internal resources securely while working remotely. Which of the following technologies should be implemented?</p>
+      <form>
+        <label><input type="radio" name="q3" value="A"> A. VPN</label><br>
+        <label><input type="radio" name="q3" value="B"> B. NAT</label><br>
+        <label><input type="radio" name="q3" value="C"> C. VLAN</label><br>
+        <label><input type="radio" name="q3" value="D"> D. DMZ</label><br>
+      </form>
+      <button onclick="checkAnswer(3, 'A')">Submit Answer</button>
+      <div class="explanation" id="exp3"></div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question" id="q4">
+      <p><strong>Question 5:</strong> Which of the following is a benefit of using a SIEM solution?</p>
+      <form>
+        <label><input type="radio" name="q4" value="A"> A. Real-time monitoring and alerting</label><br>
+        <label><input type="radio" name="q4" value="B"> B. Network segmentation</label><br>
+        <label><input type="radio" name="q4" value="C"> C. Data encryption</label><br>
+        <label><input type="radio" name="q4" value="D"> D. Patch management</label><br>
+      </form>
+      <button onclick="checkAnswer(4, 'A')">Submit Answer</button>
+      <div class="explanation" id="exp4"></div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question" id="q5">
+      <p><strong>Question 6:</strong> Which of the following is a key benefit of implementing network segmentation?</p>
+      <form>
+        <label><input type="radio" name="q5" value="A"> A. Increased bandwidth</label><br>
+        <label><input type="radio" name="q5" value="B"> B. Improved physical security</label><br>
+        <label><input type="radio" name="q5" value="C"> C. Reduced attack surface</label><br>
+        <label><input type="radio" name="q5" value="D"> D. Enhanced wireless coverage</label><br>
+      </form>
+      <button onclick="checkAnswer(5, 'C')">Submit Answer</button>
+      <div class="explanation" id="exp5"></div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question" id="q6">
+      <p><strong>Question 7:</strong> What is the primary purpose of a honeypot in cybersecurity?</p>
+      <form>
+        <label><input type="radio" name="q6" value="A"> A. To encrypt sensitive data</label><br>
+        <label><input type="radio" name="q6" value="B"> B. To detect and analyze unauthorized access</label><br>
+        <label><input type="radio" name="q6" value="C"> C. To block phishing emails</label><br>
+        <label><input type="radio" name="q6" value="D"> D. To manage firewall rules</label><br>
+      </form>
+      <button onclick="checkAnswer(6, 'B')">Submit Answer</button>
+      <div class="explanation" id="exp6"></div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question" id="q7">
+      <p><strong>Question 8:</strong> Which of the following is MOST effective in preventing brute-force attacks?</p>
+      <form>
+        <label><input type="radio" name="q7" value="A"> A. Strong encryption</label><br>
+        <label><input type="radio" name="q7" value="B"> B. Account lockout policies</label><br>
+        <label><input type="radio" name="q7" value="C"> C. Antivirus software</label><br>
+        <label><input type="radio" name="q7" value="D"> D. Network segmentation</label><br>
+      </form>
+      <button onclick="checkAnswer(7, 'B')">Submit Answer</button>
+      <div class="explanation" id="exp7"></div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question" id="q8">
+      <p><strong>Question 9:</strong> Which of the following is a common use case for TLS?</p>
+      <form>
+        <label><input type="radio" name="q8" value="A"> A. Encrypting email attachments</label><br>
+        <label><input type="radio" name="q8" value="B"> B. Securing web traffic</label><br>
+        <label><input type="radio" name="q8" value="C"> C. Managing user permissions</label><br>
+        <label><input type="radio" name="q8" value="D"> D. Blocking malware</label><br>
+      </form>
+      <button onclick="checkAnswer(8, 'B')">Submit Answer</button>
+      <div class="explanation" id="exp8"></div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question" id="q9">
+      <p><strong>Question 10:</strong> Which of the following is a characteristic of a zero-day vulnerability?</p>
+      <form>
+        <label><input type="radio" name="q9" value="A"> A. It is publicly known and patched</label><br>
+        <label><input type="radio" name="q9" value="B"> B. It is used only in phishing attacks</label><br>
+        <label><input type="radio" name="q9" value="C"> C. It is unknown to the vendor and unpatched</label><br>
+        <label><input type="radio" name="q9" value="D"> D. It affects only mobile devices</label><br>
+      </form>
+      <button onclick="checkAnswer(9, 'C')">Submit Answer</button>
+      <div class="explanation" id="exp9"></div>
+    </div>
+
+    <div id="navigation">
+      <button onclick="prevQuestion()">Previous</button>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="score">Score: 0/10 (0%)</div>
+
+  </main>
+
+  <footer>
+    <p>Static client-side quiz. No server required. Perfect for GitHub Pages.</p>
+  </footer>
+
+  <script>
+    let currentQuestion = 0;
+    let score = 0;
+    const totalQuestions = 10;
+    const answered = Array(totalQuestions).fill(false);
+
+    function checkAnswer(index, correctAnswer) {
+      const radios = document.getElementsByName(`q${index}`);
+      let selected = null;
+      for (const radio of radios) {
+        if (radio.checked) {
+          selected = radio.value;
+          break;
+        }
+      }
+      const exp = document.getElementById(`exp${index}`);
+      const explanations = [
+        "To inspect encrypted HTTPS traffic, a WAF needs a decryption certificate to decrypt, inspect, and re-encrypt the traffic.",
+        "Least privilege means users get only the access necessary to perform their job duties—nothing more.",
+        "SMS-based authentication is vulnerable to SIM swapping and interception, making it the least secure option.",
+        "VPNs provide secure remote access to internal resources over encrypted tunnels.",
+        "SIEM solutions provide centralized logging, real-time monitoring, and alerting for security events.",
+        "Network segmentation reduces the attack surface and limits lateral movement if a breach occurs.",
+        "A honeypot is a decoy system used to detect, log, and analyze unauthorized access attempts.",
+        "Account lockout policies slow or block brute-force attempts by limiting retries.",
+        "TLS is commonly used to secure web traffic (HTTPS) between clients and servers.",
+        "A zero-day vulnerability is unknown to the vendor and unpatched, leaving systems exposed until a fix is released."
+      ];
+
+      if (selected === correctAnswer) {
+        exp.classList.remove('incorrect');
+        exp.innerHTML = `✅ Correct! ${explanations[index]}`;
+        if (!answered[index]) score++;
+      } else {
+        exp.classList.add('incorrect');
+        exp.innerHTML = `❌ Incorrect. Correct answer: ${correctAnswer}. ${explanations[index]}`;
+      }
+      exp.style.display = 'block';
+      answered[index] = true;
+      updateScore();
+    }
+
+    function updateScore() {
+      const percent = ((score / totalQuestions) * 100).toFixed(0);
+      document.getElementById('score').innerText = `Score: ${score}/${totalQuestions} (${percent}%)`;
+    }
+
+    function nextQuestion() {
+      document.getElementById(`q${currentQuestion}`).classList.remove('active');
+      currentQuestion = Math.min(currentQuestion + 1, totalQuestions - 1);
+      document.getElementById(`q${currentQuestion}`).classList.add('active');
+    }
+
+    function prevQuestion() {
+      document.getElementById(`q${currentQuestion}`).classList.remove('active');
+      currentQuestion = Math.max(currentQuestion - 1, 0);
+      document.getElementById(`q${currentQuestion}`).classList.add('active');
+    }
+  </script>
+</body>
+</html>

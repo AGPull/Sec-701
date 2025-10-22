@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SY0-701 Practice Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; }
+    .question { border: 1px solid #ddd; padding: 12px; margin: 12px 0; border-radius: 6px; }
+    .options { margin-top: 8px; }
+    .explanation { margin-top: 8px; padding: 8px; background: #f9f9f9; border-left: 4px solid #ccc; display: none; }
+    .correct { border-left-color: #28a745; }
+    .incorrect { border-left-color: #dc3545; }
+    .scoreboard { margin-top: 16px; padding: 12px; background: #f1f1f1; border-radius: 6px; }
+    button { margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <h1>SY0-701 Practice Quiz</h1>
+  <p>This quiz contains sample non-copyrighted questions. Select an answer for each question, then press "Submit" to see your score, correct answers, and explanations.</p>
+
+  <form id="quizForm">
+
+    <div class="question" data-answer="C">
+      <strong>1. Which principle ensures that users are given only the permissions they need to perform their job?</strong>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A. Separation of duties</label><br>
+        <label><input type="radio" name="q1" value="B"> B. Defense in depth</label><br>
+        <label><input type="radio" name="q1" value="C"> C. Principle of least privilege</label><br>
+        <label><input type="radio" name="q1" value="D"> D. Need to know</label>
+      </div>
+      <div class="explanation" id="exp1"><strong>Answer: C.</strong> The principle of least privilege limits user access to the minimum necessary to perform their role, reducing the attack surface and potential for misuse.</div>
+    </div>
+
+    <div class="question" data-answer="B">
+      <strong>2. What is the primary purpose of a firewall in a network?</strong>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A. Encrypt data in transit</label><br>
+        <label><input type="radio" name="q2" value="B"> B. Control and filter network traffic based on policies</label><br>
+        <label><input type="radio" name="q2" value="C"> C. Authenticate users to the network</label><br>
+        <label><input type="radio" name="q2" value="D"> D. Provide DNS resolution</label><br>
+      </div>
+      <div class="explanation" id="exp2"><strong>Answer: B.</strong> A firewall enforces security policies by allowing, blocking, or logging network traffic according to configured rules, protecting internal networks from unauthorized access.</div>
+    </div>
+
+    <div class="question" data-answer="A">
+      <strong>3. Which algorithm type is commonly used to verify data integrity by producing a fixed-size string from input data?</strong>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A. Hash function</label><br>
+        <label><input type="radio" name="q3" value="B"> B. Symmetric encryption</label><br>
+        <label><input type="radio" name="q3" value="C"> C. Public key infrastructure</label><br>
+        <label><input type="radio" name="q3" value="D"> D. Steganography</label><br>
+      </div>
+      <div class="explanation" id="exp3"><strong>Answer: A.</strong> Hash functions map arbitrary-sized data to fixed-size hashes, enabling integrity checks; even small input changes produce different hashes.</div>
+    </div>
+
+    <div class="question" data-answer="D">
+      <strong>4. Which of the following is an example of multi-factor authentication?</strong>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A. Password only</label><br>
+        <label><input type="radio" name="q4" value="B"> B. PIN and password (both knowledge)</label><br>
+        <label><input type="radio" name="q4" value="C"> C. Fingerprint only</label><br>
+        <label><input type="radio" name="q4" value="D"> D. Password plus a one-time code sent to your phone</label><br>
+      </div>
+      <div class="explanation" id="exp4"><strong>Answer: D.</strong> Multi-factor authentication requires at least two different factor types (knowledge, possession, inherence). A password (knowledge) plus a one-time code (possession) qualifies.</div>
+    </div>
+
+    <div class="question" data-answer="B">
+      <strong>5. What is social engineering?</strong>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A. Writing malware to exploit software bugs</label><br>
+        <label><input type="radio" name="q5" value="B"> B. Manipulating people into divulging confidential information</label><br>
+        <label><input type="radio" name="q5" value="C"> C. Scanning networks for open ports</label><br>
+        <label><input type="radio" name="q5" value="D"> D. Encrypting data for secure storage</label><br>
+      </div>
+      <div class="explanation" id="exp5"><strong>Answer: B.</strong> Social engineering attacks exploit human psychology to trick people into revealing sensitive data or performing actions that compromise security.</div>
+    </div>
+
+    <div class="question" data-answer="A">
+      <strong>6. Which security control would you use to detect and alert on suspicious activity within a network?</strong>
+      <div class="options">
+        <label><input type="radio" name="q6" value="A"> A. Intrusion detection system (IDS)</label><br>
+        <label><input type="radio" name="q6" value="B"> B. Backup solution</label><br>
+        <label><input type="radio" name="q6" value="C"> C. Physical locks</label><br>
+        <label><input type="radio" name="q6" value="D"> D. Firewall</label><br>
+      </div>
+      <div class="explanation" id="exp6"><strong>Answer: A.</strong> An IDS analyzes network traffic or host activity to detect patterns of suspicious or malicious behavior and can generate alerts for security teams.</div>
+    </div>
+
+    <div class="question" data-answer="C">
+      <strong>7. What does the principle of defense in depth advocate?</strong>
+      <div class="options">
+        <label><input type="radio" name="q7" value="A"> A. Using a single, very strong perimeter control</label><br>
+        <label><input type="radio" name="q7" value="B"> B. Removing redundant controls to reduce complexity</label><br>
+        <label><input type="radio" name="q7" value="C"> C. Implementing multiple layers of security controls</label><br>
+        <label><input type="radio" name="q7" value="D"> D. Allowing all traffic within a trusted network</label><br>
+      </div>
+      <div class="explanation" id="exp7"><strong>Answer: C.</strong> Defense in depth uses multiple overlapping security measures so that if one control fails, others still protect assets.</div>
+    </div>
+
+    <div class="question" data-answer="B">
+      <strong>8. Which of the following best describes phishing?</strong>
+      <div class="options">
+        <label><input type="radio" name="q8" value="A"> A. Exploiting software vulnerabilities over the network</label><br>
+        <label><input type="radio" name="q8" value="B"> B. Fraudulent emails designed to trick recipients into giving credentials or clicking malicious links</label><br>
+        <label><input type="radio" name="q8" value="C"> C. Physical tampering with network devices</label><br>
+        <label><input type="radio" name="q8" value="D"> D. Scanning for open Wi-Fi networks</label><br>
+      </div>
+      <div class="explanation" id="exp8"><strong>Answer: B.</strong> Phishing involves deceptive messages that trick users into revealing sensitive information or performing unsafe actions.</div>
+    </div>
+
+    <div class="question" data-answer="A">
+      <strong>9. What is the main goal of encryption?</strong>
+      <div class="options">
+        <label><input type="radio" name="q9" value="A"> A. Protect confidentiality of data by making it unreadable without the key</label><br>
+        <label><input type="radio" name="q9" value="B"> B. Improve system performance</label><br>
+        <label><input type="radio" name="q9" value="C"> C. Authenticate users to a system</label><br>
+        <label><input type="radio" name="q9" value="D"> D. Replace backups</label><br>
+      </div>
+      <div class="explanation" id="exp9"><strong>Answer: A.</strong> Encryption transforms readable data into ciphertext to prevent unauthorized parties from reading it without the proper decryption key.</div>
+    </div>
+
+    <div class="question" data-answer="D">
+      <strong>10. Which practice reduces risk from outdated software?</strong>
+      <div class="options">
+        <label><input type="radio" name="q10" value="A"> A. Disabling logging</label><br>
+        <label><input type="radio" name="q10" value="B"> B. Increasing password length only</label><br>
+        <label><input type="radio" name="q10" value="C"> C. Using weak encryption</label><br>
+        <label><input type="radio" name="q10" value="D"> D. Regular patching and updates</label><br>
+      </div>
+      <div class="explanation" id="exp10"><strong>Answer: D.</strong> Regularly applying patches and updates addresses known vulnerabilities and reduces the attack surface from outdated software.</div>
+    </div>
+
+    <div class="scoreboard" id="scoreboard">
+      <strong>Score:</strong> <span id="score">0</span> / <span id="total">10</span>
+      <div id="feedback" style="margin-top:8px"></div>
+    </div>
+
+    <div style="margin-top:12px">
+      <button type="button" id="submitBtn">Submit</button>
+      <button type="button" id="showAnswersBtn">Show Answers & Explanations</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+
+  </form>
+
+  <script>
+    const total = 10;
+    document.getElementById('total').textContent = total;
+
+    function grade(showExplanations = false) {
+      let score = 0;
+      for (let i = 1; i <= total; i++) {
+        const q = document.querySelector(`.question[data-answer]:nth-of-type(${i})`);
+        const correct = q.getAttribute('data-answer');
+        const selected = document.querySelector(`input[name=q${i}]:checked`);
+        const exp = document.getElementById('exp' + i);
+        exp.style.display = 'none';
+        q.classList.remove('correct','incorrect');
+        if (selected) {
+          if (selected.value === correct) {
+            score++;
+            q.classList.add('correct');
+          } else {
+            q.classList.add('incorrect');
+          }
+        } else {
+          q.classList.add('incorrect');
+        }
+        if (showExplanations) exp.style.display = 'block';
+      }
+      document.getElementById('score').textContent = score;
+      const feedback = document.getElementById('feedback');
+      const pct = Math.round((score/total)*100);
+      let msg = '';
+      if (pct === 100) msg = 'Perfect score — well done!';
+      else if (pct >= 80) msg = 'Great job — near perfect.';
+      else if (pct >= 50) msg = 'Good effort — keep studying.';
+      else msg = 'Needs improvement — review the explanations.';
+      feedback.textContent = `${msg} (${pct}%)`;
+      return score;
+    }
+
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      grade(false);
+    });
+
+    document.getElementById('showAnswersBtn').addEventListener('click', () => {
+      grade(true);
+      // scroll to first explanation
+      const firstExp = document.querySelector('.explanation');
+      if (firstExp) firstExp.scrollIntoView({behavior: 'smooth'});
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      document.getElementById('quizForm').reset();
+      for (let i = 1; i <= total; i++) {
+        const q = document.querySelector(`.question:nth-of-type(${i})`);
+        const exp = document.getElementById('exp' + i);
+        exp.style.display = 'none';
+        q.classList.remove('correct','incorrect');
+      }
+      document.getElementById('score').textContent = 0;
+      document.getElementById('feedback').textContent = '';
+    });
+  </script>
+</body>
+</html>
