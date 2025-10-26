@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SY0-701 Practice Quiz</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SY0-701 Practice Quiz</title>
+<style>
     body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; }
     .question { border: 1px solid #ddd; padding: 12px; margin: 12px 0; border-radius: 6px; }
@@ -17,190 +18,2315 @@
   </style>
 </head>
 <body>
-  <h1>SY0-701 Practice Quiz</h1>
-  <p>This quiz contains sample non-copyrighted questions. Select an answer for each question, then press "Submit" to see your score, correct answers, and explanations.</p>
+<h1>SY0-701 Practice Quiz</h1>
+<p>This quiz contains sample non-copyrighted questions. Select an answer for each question, then press "Submit" to see your score, correct answers, and explanations.</p>
+<form id="quizForm">
+<!-- Questions imported from QUESTIONS.TXT (many numbered items). -->
 
-  <form id="quizForm">
 
-    <div class="question" data-answer="C">
-      <strong>1. Which principle ensures that users are given only the permissions they need to perform their job?</strong>
-      <div class="options">
-        <label><input type="radio" name="q1" value="A"> A. Separation of duties</label><br>
-        <label><input type="radio" name="q1" value="B"> B. Defense in depth</label><br>
-        <label><input type="radio" name="q1" value="C"> C. Principle of least privilege</label><br>
-        <label><input type="radio" name="q1" value="D"> D. Need to know</label>
-      </div>
-      <div class="explanation" id="exp1"><strong>Answer: C.</strong> The principle of least privilege limits user access to the minimum necessary to perform their role, reducing the attack surface and potential for misuse.</div>
-    </div>
 
-    <div class="question" data-answer="B">
-      <strong>2. What is the primary purpose of a firewall in a network?</strong>
-      <div class="options">
-        <label><input type="radio" name="q2" value="A"> A. Encrypt data in transit</label><br>
-        <label><input type="radio" name="q2" value="B"> B. Control and filter network traffic based on policies</label><br>
-        <label><input type="radio" name="q2" value="C"> C. Authenticate users to the network</label><br>
-        <label><input type="radio" name="q2" value="D"> D. Provide DNS resolution</label><br>
-      </div>
-      <div class="explanation" id="exp2"><strong>Answer: B.</strong> A firewall enforces security policies by allowing, blocking, or logging network traffic according to configured rules, protecting internal networks from unauthorized access.</div>
-    </div>
 
-    <div class="question" data-answer="A">
-      <strong>3. Which algorithm type is commonly used to verify data integrity by producing a fixed-size string from input data?</strong>
-      <div class="options">
-        <label><input type="radio" name="q3" value="A"> A. Hash function</label><br>
-        <label><input type="radio" name="q3" value="B"> B. Symmetric encryption</label><br>
-        <label><input type="radio" name="q3" value="C"> C. Public key infrastructure</label><br>
-        <label><input type="radio" name="q3" value="D"> D. Steganography</label><br>
-      </div>
-      <div class="explanation" id="exp3"><strong>Answer: A.</strong> Hash functions map arbitrary-sized data to fixed-size hashes, enabling integrity checks; even small input changes produce different hashes.</div>
-    </div>
 
-    <div class="question" data-answer="D">
-      <strong>4. Which of the following is an example of multi-factor authentication?</strong>
-      <div class="options">
-        <label><input type="radio" name="q4" value="A"> A. Password only</label><br>
-        <label><input type="radio" name="q4" value="B"> B. PIN and password (both knowledge)</label><br>
-        <label><input type="radio" name="q4" value="C"> C. Fingerprint only</label><br>
-        <label><input type="radio" name="q4" value="D"> D. Password plus a one-time code sent to your phone</label><br>
-      </div>
-      <div class="explanation" id="exp4"><strong>Answer: D.</strong> Multi-factor authentication requires at least two different factor types (knowledge, possession, inherence). A password (knowledge) plus a one-time code (possession) qualifies.</div>
-    </div>
 
-    <div class="question" data-answer="B">
-      <strong>5. What is social engineering?</strong>
-      <div class="options">
-        <label><input type="radio" name="q5" value="A"> A. Writing malware to exploit software bugs</label><br>
-        <label><input type="radio" name="q5" value="B"> B. Manipulating people into divulging confidential information</label><br>
-        <label><input type="radio" name="q5" value="C"> C. Scanning networks for open ports</label><br>
-        <label><input type="radio" name="q5" value="D"> D. Encrypting data for secure storage</label><br>
-      </div>
-      <div class="explanation" id="exp5"><strong>Answer: B.</strong> Social engineering attacks exploit human psychology to trick people into revealing sensitive data or performing actions that compromise security.</div>
-    </div>
 
-    <div class="question" data-answer="A">
-      <strong>6. Which security control would you use to detect and alert on suspicious activity within a network?</strong>
-      <div class="options">
-        <label><input type="radio" name="q6" value="A"> A. Intrusion detection system (IDS)</label><br>
-        <label><input type="radio" name="q6" value="B"> B. Backup solution</label><br>
-        <label><input type="radio" name="q6" value="C"> C. Physical locks</label><br>
-        <label><input type="radio" name="q6" value="D"> D. Firewall</label><br>
-      </div>
-      <div class="explanation" id="exp6"><strong>Answer: A.</strong> An IDS analyzes network traffic or host activity to detect patterns of suspicious or malicious behavior and can generate alerts for security teams.</div>
-    </div>
 
-    <div class="question" data-answer="C">
-      <strong>7. What does the principle of defense in depth advocate?</strong>
-      <div class="options">
-        <label><input type="radio" name="q7" value="A"> A. Using a single, very strong perimeter control</label><br>
-        <label><input type="radio" name="q7" value="B"> B. Removing redundant controls to reduce complexity</label><br>
-        <label><input type="radio" name="q7" value="C"> C. Implementing multiple layers of security controls</label><br>
-        <label><input type="radio" name="q7" value="D"> D. Allowing all traffic within a trusted network</label><br>
-      </div>
-      <div class="explanation" id="exp7"><strong>Answer: C.</strong> Defense in depth uses multiple overlapping security measures so that if one control fails, others still protect assets.</div>
-    </div>
 
-    <div class="question" data-answer="B">
-      <strong>8. Which of the following best describes phishing?</strong>
-      <div class="options">
-        <label><input type="radio" name="q8" value="A"> A. Exploiting software vulnerabilities over the network</label><br>
-        <label><input type="radio" name="q8" value="B"> B. Fraudulent emails designed to trick recipients into giving credentials or clicking malicious links</label><br>
-        <label><input type="radio" name="q8" value="C"> C. Physical tampering with network devices</label><br>
-        <label><input type="radio" name="q8" value="D"> D. Scanning for open Wi-Fi networks</label><br>
-      </div>
-      <div class="explanation" id="exp8"><strong>Answer: B.</strong> Phishing involves deceptive messages that trick users into revealing sensitive information or performing unsafe actions.</div>
-    </div>
 
-    <div class="question" data-answer="A">
-      <strong>9. What is the main goal of encryption?</strong>
-      <div class="options">
-        <label><input type="radio" name="q9" value="A"> A. Protect confidentiality of data by making it unreadable without the key</label><br>
-        <label><input type="radio" name="q9" value="B"> B. Improve system performance</label><br>
-        <label><input type="radio" name="q9" value="C"> C. Authenticate users to a system</label><br>
-        <label><input type="radio" name="q9" value="D"> D. Replace backups</label><br>
-      </div>
-      <div class="explanation" id="exp9"><strong>Answer: A.</strong> Encryption transforms readable data into ciphertext to prevent unauthorized parties from reading it without the proper decryption key.</div>
-    </div>
 
-    <div class="question" data-answer="D">
-      <strong>10. Which practice reduces risk from outdated software?</strong>
-      <div class="options">
-        <label><input type="radio" name="q10" value="A"> A. Disabling logging</label><br>
-        <label><input type="radio" name="q10" value="B"> B. Increasing password length only</label><br>
-        <label><input type="radio" name="q10" value="C"> C. Using weak encryption</label><br>
-        <label><input type="radio" name="q10" value="D"> D. Regular patching and updates</label><br>
-      </div>
-      <div class="explanation" id="exp10"><strong>Answer: D.</strong> Regularly applying patches and updates addresses known vulnerabilities and reduces the attack surface from outdated software.</div>
-    </div>
 
-    <div class="scoreboard" id="scoreboard">
-      <strong>Score:</strong> <span id="score">0</span> / <span id="total">10</span>
-      <div id="feedback" style="margin-top:8px"></div>
-    </div>
 
-    <div style="margin-top:12px">
-      <button type="button" id="submitBtn">Submit</button>
-      <button type="button" id="showAnswersBtn">Show Answers & Explanations</button>
-      <button type="button" id="resetBtn">Reset</button>
-    </div>
 
-  </form>
 
-  <script>
-    const total = 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="scoreboard" id="scoreboard">
+<strong>Score:</strong> <span id="score">0</span> / <span id="total">40</span>
+<div id="feedback" style="margin-top:8px"></div>
+</div>
+<div style="margin-top:12px">
+<button id="submitBtn" type="button">Submit</button>
+<button id="showAnswersBtn" type="button">Show Answers &amp; Explanations</button>
+<button id="resetBtn" type="button">Reset</button>
+</div>
+
+<div class="question" data-answer="D">
+<strong>Question 29. An online banking website employs a system that
+automatically logs out users after 10 minutes of inactivity to
+ensure that if a user forgets to log out, no one else can alter the
+user’s banking details. Which principle of the CIA triad is the
+banking website MOST directly addressing?</strong>
+<div class="options">
+<label><input name="q1" type="radio" value="A"/> A. Confidentiality</label><br/>
+<label><input name="q1" type="radio" value="B"/> B. Availability</label><br/>
+<label><input name="q1" type="radio" value="C"/> C. Authentication</label><br/>
+<label><input name="q1" type="radio" value="D"/> D. Integrity</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="1" type="button">Check Answer</button></div>
+<div class="explanation" id="exp1"><strong>Answer: D.</strong> Integrity. The integrity</div>
+</div>
+<div class="question" data-answer="A">
+<strong>Question 34. To discourage potential cybercriminals from
+targeting their online storefront, an e-commerce company is
+considering various security measures. Which of the following
+would act MOST effectively as a deterrent control?</strong>
+<div class="options">
+<label><input name="q2" type="radio" value="A"/> A. Displaying a seal for third-party security certifications
+on the website</label><br/>
+<label><input name="q2" type="radio" value="B"/> B. Using a Web Application Firewall (WAF)</label><br/>
+<label><input name="q2" type="radio" value="C"/> C. Conducting monthly vulnerability assessments</label><br/>
+<label><input name="q2" type="radio" value="D"/> D. Storing customer data in encrypted databases</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="2" type="button">Check Answer</button></div>
+<div class="explanation" id="exp2"><strong>Answer: A.</strong> Displaying a seal for</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 39. GreenValley Mall, located in a busy urban area,
+has recently faced security concerns due to the proximity of its
+main entrance to a major road. Which physical security
+enhancement can the mall management implement to create a
+protective barrier between the road and the entrance, ensuring
+pedestrian safety and preventing unauthorized vehicular access?</strong>
+<div class="options">
+<label><input name="q3" type="radio" value="A"/> A. Reinforced Walls</label><br/>
+<label><input name="q3" type="radio" value="B"/> B. Metal Detectors</label><br/>
+<label><input name="q3" type="radio" value="C"/> C. Bollards</label><br/>
+<label><input name="q3" type="radio" value="D"/> D. Perimeter Fencing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="3" type="button">Check Answer</button></div>
+<div class="explanation" id="exp3"><strong>Answer: C.</strong> Bollards. Bollards are</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 42. A multinational organization recently experienced
+a significant security breach. After investigating, it was
+determined that a change to the network infrastructure was
+made without undergoing the standard approval process. As a
+result, there was a misconfiguration which allowed
+unauthorized access. What security principle related to change
+management did the organization neglect?</strong>
+<div class="options">
+<label><input name="q4" type="radio" value="A"/> A. Configuration baseline reviews</label><br/>
+<label><input name="q4" type="radio" value="B"/> B. Least privilege enforcement
+
+Explanation 42. Correct Answer: C. Approval process
+adherence. The approval process is a critical aspect of change
+management. Before any changes are made, especially to
+critical systems like network infrastructure, they need to
+undergo a rigorous approval process. This ensures that multiple
+experts evaluate the change for potential vulnerabilities or
+issues. In this scenario, skipping the approval process led to a
+significant security breach.
+
+Question 43. After a series of cyber-attacks on a company’s
+infrastructure, the IT team decided to deploy a solution that
+would seem like a legitimate part of their network but is
+intentionally isolated and monitored. They intend to detect and
+analyze malicious activities in this isolated environment. What
+technology are they most likely implementing?
+(A) Network segmentation
+(B) Honeypot</label><br/>
+<label><input name="q4" type="radio" value="C"/> C. DMZ (Demilitarized Zone)</label><br/>
+<label><input name="q4" type="radio" value="D"/> D. Sandboxing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="4" type="button">Check Answer</button></div>
+<div class="explanation" id="exp4"><strong>Answer: B.</strong> Honeypot. A honeypot is</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 51. BioGen Inc., a biotechnology company, has
+implemented a layered security approach. They are considering
+adding a human element to their security measures for their
+research labs. Which of the following would best provide the
+ability to evaluate and respond to various security situations
+with human judgment?</strong>
+<div class="options">
+<label><input name="q5" type="radio" value="A"/> A. Installing biometric locks</label><br/>
+<label><input name="q5" type="radio" value="B"/> B. Employing security guards</label><br/>
+<label><input name="q5" type="radio" value="C"/> C. Implementing an access control vestibule</label><br/>
+<label><input name="q5" type="radio" value="D"/> D. Deploying AI-driven security cameras</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="5" type="button">Check Answer</button></div>
+<div class="explanation" id="exp5"><strong>Answer: B.</strong> Employing security</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 55. While setting up a new internal web application,
+Laura, a system administrator, decides to use a digital certificate
+for SSL/TLS encryption. Due to budget constraints, she can’t
+procure a certificate from a commercial Certificate Authority
+(CA). Which of the following would be a viable option for
+Laura to secure the application?</strong>
+<div class="options">
+<label><input name="q6" type="radio" value="A"/> A. Rely on plaintext HTTP for the application</label><br/>
+<label><input name="q6" type="radio" value="B"/> B. Obtain a certificate from a free Certificate Authority</label><br/>
+<label><input name="q6" type="radio" value="C"/> C. Generate a self-signed certificate</label><br/>
+<label><input name="q6" type="radio" value="D"/> D. Use a shared certificate from another application</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="6" type="button">Check Answer</button></div>
+<div class="explanation" id="exp6"><strong>Answer: C.</strong> Generate a self-signed</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 58. A financial institution processes thousands of
+credit card transactions daily. To ensure the security and
+integrity of these transactions, the security officer wants to
+employ a solution that will safely manage and store
+cryptographic keys. Which of the following would be the
+MOST suitable solution?</strong>
+<div class="options">
+<label><input name="q7" type="radio" value="A"/> A. Trusted Platform Module (TPM)</label><br/>
+<label><input name="q7" type="radio" value="B"/> B. Full Disk Encryption (FDE)</label><br/>
+<label><input name="q7" type="radio" value="C"/> C. Hardware Security Module (HSM)</label><br/>
+<label><input name="q7" type="radio" value="D"/> D. Software Key Repository</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="7" type="button">Check Answer</button></div>
+<div class="explanation" id="exp7"><strong>Answer: C.</strong> Hardware Security</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 60. A company is developing a new video
+conferencing tool. They want to make sure that all video and
+audio data transmitted between participants are encrypted and
+protected from eavesdropping. Which type of encryption should
+the developers implement to achieve this?</strong>
+<div class="options">
+<label><input name="q8" type="radio" value="A"/> A. Endpoint Encryption</label><br/>
+<label><input name="q8" type="radio" value="B"/> B. Transport-layer Encryption</label><br/>
+<label><input name="q8" type="radio" value="C"/> C. Volume-level Encryption</label><br/>
+<label><input name="q8" type="radio" value="D"/> D. Database-level EncryptionAccess Control</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="8" type="button">Check Answer</button></div>
+<div class="explanation" id="exp8"><strong>Answer: B.</strong> Transport-layer</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 67. Sarah is working on a project where she needs to
+validate the integrity and authenticity of assets over time,
+without a centralized authority. Which technology would be
+most appropriate for this use case?</strong>
+<div class="options">
+<label><input name="q9" type="radio" value="A"/> A. Digital signature</label><br/>
+<label><input name="q9" type="radio" value="B"/> B. Key escrow</label><br/>
+<label><input name="q9" type="radio" value="C"/> C. Blockchain</label><br/>
+<label><input name="q9" type="radio" value="D"/> D. Key management system</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="9" type="button">Check Answer</button></div>
+<div class="explanation" id="exp9"><strong>Answer: C.</strong> Blockchain. Blockchain</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 68. A graphic design company frequently works with
+large files such as videos and high-resolution images. These
+files are stored on a dedicated storage volume in their server.
+While they need to secure this data, they don’t want to encrypt
+individual files due to the volume of data and frequent access
+needs. Which encryption approach is most appropriate for this
+scenario?</strong>
+<div class="options">
+<label><input name="q10" type="radio" value="A"/> A. File-level Encryption</label><br/>
+<label><input name="q10" type="radio" value="B"/> B. Full-disk Encryption</label><br/>
+<label><input name="q10" type="radio" value="C"/> C. Transport-layer Encryption</label><br/>
+<label><input name="q10" type="radio" value="D"/> D. Volume-level Encryption</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="10" type="button">Check Answer</button></div>
+<div class="explanation" id="exp10"><strong>Answer: D.</strong> Volume-level</div>
+</div>
+<div class="question" data-answer="A">
+<strong>Question 72. A security administrator needs to apply a
+configuration change to a critical service, requiring a service
+restart. Before initiating the restart, which of the following steps
+is MOST important to ensure continuous service availability?</strong>
+<div class="options">
+<label><input name="q11" type="radio" value="A"/> A. Implement automatic service restart on failure</label><br/>
+<label><input name="q11" type="radio" value="B"/> B. Announce the restart to all company employees</label><br/>
+<label><input name="q11" type="radio" value="C"/> C. Schedule the restart during off-peak hours</label><br/>
+<label><input name="q11" type="radio" value="D"/> D. Take a backup of the current service configuration</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="11" type="button">Check Answer</button></div>
+<div class="explanation" id="exp11"><strong>Answer: A.</strong> Implement automatic</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 77. An online retailer is considering various methods
+to protect its customers’ credit card information. Instead of
+storing the actual credit card numbers in their database, they opt
+for a solution that replaces the numbers with unrelated, random
+values. What is this method called?</strong>
+<div class="options">
+<label><input name="q12" type="radio" value="A"/> A. Symmetric encryption</label><br/>
+<label><input name="q12" type="radio" value="B"/> B. Digital watermarking</label><br/>
+<label><input name="q12" type="radio" value="C"/> C. Hashing</label><br/>
+<label><input name="q12" type="radio" value="D"/> D. Tokenization</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="12" type="button">Check Answer</button></div>
+<div class="explanation" id="exp12"><strong>Answer: D.</strong> Tokenization.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 85. A large e-commerce company is deploying a new
+online payment system. The Chief Information Security Officer
+(CISO) is concerned about the security of cryptographic keys
+and wants to ensure they are protected from potential theft or
+compromise. Which tool should the CISO implement to provide
+the HIGHEST level of security for these keys?</strong>
+<div class="options">
+<label><input name="q13" type="radio" value="A"/> A. Password vault</label><br/>
+<label><input name="q13" type="radio" value="B"/> B. Software-based key storage</label><br/>
+<label><input name="q13" type="radio" value="C"/> C. Hardware Security Module (HSM)</label><br/>
+<label><input name="q13" type="radio" value="D"/> D. Cloud-based encryption service</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="13" type="button">Check Answer</button></div>
+<div class="explanation" id="exp13"><strong>Answer: C.</strong> Hardware Security</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 87. A financial institution is looking to adopt an
+encryption algorithm for its transactions that is considered to be
+very secure due to its longer key length, compared to older
+standards. Which encryption algorithm best fits this description?</strong>
+<div class="options">
+<label><input name="q14" type="radio" value="A"/> A. DES</label><br/>
+<label><input name="q14" type="radio" value="B"/> B. Blowfish</label><br/>
+<label><input name="q14" type="radio" value="C"/> C. RSA</label><br/>
+<label><input name="q14" type="radio" value="D"/> D. AES-256</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="14" type="button">Check Answer</button></div>
+<div class="explanation" id="exp14"><strong>Answer: D.</strong> AES-256. AES-256, part</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 88. Alice receives an email from Bob with an attached
+document. She wants to verify both the authenticity of the
+sender and the integrity of the attached document. Which of the
+following should Bob have used before sending the email?</strong>
+<div class="options">
+<label><input name="q15" type="radio" value="A"/> A. Encrypt the document with his private key</label><br/>
+<label><input name="q15" type="radio" value="B"/> B. Hash the document</label><br/>
+<label><input name="q15" type="radio" value="C"/> C. Encrypt the document with Alice's public key</label><br/>
+<label><input name="q15" type="radio" value="D"/> D. Sign the document with his private key</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="15" type="button">Check Answer</button></div>
+<div class="explanation" id="exp15"><strong>Answer: D.</strong> Sign the document with</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 92. A user wants to send a confidential email to their
+colleague and ensure that only the intended recipient can read it.
+The user also wants to provide assurance to the recipient that
+the email was indeed sent by them. Which encryption method
+should the user employ to accomplish this?</strong>
+<div class="options">
+<label><input name="q16" type="radio" value="A"/> A. Use symmetric encryption with a shared key</label><br/>
+<label><input name="q16" type="radio" value="B"/> B. Use asymmetric encryption and encrypt the email with
+the recipient's public key</label><br/>
+<label><input name="q16" type="radio" value="C"/> C. Use asymmetric encryption, encrypt the email with the
+user's private key</label><br/>
+<label><input name="q16" type="radio" value="D"/> D. Use asymmetric encryption, first sign the email with the
+user's private key, then encrypt it with the recipient's public key</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="16" type="button">Check Answer</button></div>
+<div class="explanation" id="exp16"><strong>Answer: D.</strong> Use asymmetric</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 93. A user, Amy, wants to securely send a confidential
+document to her colleague, Bob. Amy decides to encrypt the
+document to ensure its confidentiality. Which of the following
+should Amy use to encrypt the document, ensuring only Bob
+can decrypt it?</strong>
+<div class="options">
+<label><input name="q17" type="radio" value="A"/> A. Amy's private key</label><br/>
+<label><input name="q17" type="radio" value="B"/> B. Amy's public key</label><br/>
+<label><input name="q17" type="radio" value="C"/> C. Bob's private key</label><br/>
+<label><input name="q17" type="radio" value="D"/> D. Bob's public key</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="17" type="button">Check Answer</button></div>
+<div class="explanation" id="exp17"><strong>Answer: D.</strong> Bob’s public key. In</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 98. A company is looking for a cryptographic solution
+that provides an immutable and transparent record of all
+transactions in a distributed ledger system. Which of the
+following would BEST meet this requirement?</strong>
+<div class="options">
+<label><input name="q18" type="radio" value="A"/> A. Symmetric key algorithm</label><br/>
+<label><input name="q18" type="radio" value="B"/> B. Public key infrastructure</label><br/>
+<label><input name="q18" type="radio" value="C"/> C. Blockchain</label><br/>
+<label><input name="q18" type="radio" value="D"/> D. Digital watermark</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="18" type="button">Check Answer</button></div>
+<div class="explanation" id="exp18"><strong>Answer: C.</strong> Blockchain. Blockchain</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 102. A financial institution plans to provide access to
+its database for third-party developers to create new
+applications. However, they want to ensure that the developers
+do not see the actual data but instead work with a disguised
+version that retains the data’s original structure. What technique
+is the financial institution considering?</strong>
+<div class="options">
+<label><input name="q19" type="radio" value="A"/> A. Tokenization</label><br/>
+<label><input name="q19" type="radio" value="B"/> B. Data masking</label><br/>
+<label><input name="q19" type="radio" value="C"/> C. Encryption</label><br/>
+<label><input name="q19" type="radio" value="D"/> D. Digital watermarking</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="19" type="button">Check Answer</button></div>
+<div class="explanation" id="exp19"><strong>Answer: B.</strong> Data masking. Data</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 116. Mike, a network administrator, notices an
+unauthorized device connected directly to the company’s main
+network switch in the server room. This device is attempting to
+capture network traffic. What kind of attack is this unauthorized
+device likely conducting?</strong>
+<div class="options">
+<label><input name="q20" type="radio" value="A"/> A. Rogue access point</label><br/>
+<label><input name="q20" type="radio" value="B"/> B. VLAN hopping</label><br/>
+<label><input name="q20" type="radio" value="C"/> C. Port mirroring</label><br/>
+<label><input name="q20" type="radio" value="D"/> D. ARP poisoning</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="20" type="button">Check Answer</button></div>
+<div class="explanation" id="exp20"><strong>Answer: C.</strong> Port mirroring. Port</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 120. Jane, an accountant in a multinational
+corporation, received an email from what seemed to be the
+company’s IT department. The email had the company’s logo,
+colors, and font and urged Jane to click on a link to reset her
+password due to “suspicious activity.” However, upon close
+inspection, Jane noticed a minor spelling error in the domain
+name of the sender’s email address. What type of attack does
+this scenario describe?</strong>
+<div class="options">
+<label><input name="q21" type="radio" value="A"/> A. Spear Phishing</label><br/>
+<label><input name="q21" type="radio" value="B"/> B. Vishing</label><br/>
+<label><input name="q21" type="radio" value="C"/> C. Baiting</label><br/>
+<label><input name="q21" type="radio" value="D"/> D. Brand Impersonation</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="21" type="button">Check Answer</button></div>
+<div class="explanation" id="exp21"><strong>Answer: D.</strong> Brand Impersonation.</div>
+</div>
+<div class="question" data-answer="A">
+<strong>Question 137. Lucy, a security analyst, is informed that several
+employees have been receiving unauthorized file transfer
+requests via Bluetooth when they are in the company’s
+cafeteria. Which of the following attacks is MOST likely being
+attempted?</strong>
+<div class="options">
+<label><input name="q22" type="radio" value="A"/> A. Bluejacking</label><br/>
+<label><input name="q22" type="radio" value="B"/> B. ARP poisoning</label><br/>
+<label><input name="q22" type="radio" value="C"/> C. Bluesnarfing</label><br/>
+<label><input name="q22" type="radio" value="D"/> D. Evil Twin</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="22" type="button">Check Answer</button></div>
+<div class="explanation" id="exp22"><strong>Answer: A.</strong> Bluejacking.</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 141. A company detected a DDoS attack that lasted
+for several weeks. The attackers used a botnet of millions of
+infected devices and frequently rotated attack vectors to bypass
+mitigation efforts. This prolonged and resource-intensive attack
+suggests which kind of threat actor’s resources and funding?</strong>
+<div class="options">
+<label><input name="q23" type="radio" value="A"/> A. Amateur hacker with minimal resources</label><br/>
+<label><input name="q23" type="radio" value="B"/> B. Cybersecurity researcher testing vulnerabilities</label><br/>
+<label><input name="q23" type="radio" value="C"/> C. Nation-state actor with strategic interests</label><br/>
+<label><input name="q23" type="radio" value="D"/> D. Organized crime syndicate with substantial funding</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="23" type="button">Check Answer</button></div>
+<div class="explanation" id="exp23"><strong>Answer: D.</strong> Organized crime</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 145. During an e-commerce website audit, a security
+analyst discovers that if a user tries to purchase a product and
+simultaneously cancels the order, the product sometimes gets
+added to the user’s cart without deducting any funds. This
+vulnerability can potentially be exploited to obtain products for
+free. Which vulnerability type is the e-commerce website
+susceptible to?</strong>
+<div class="options">
+<label><input name="q24" type="radio" value="A"/> A. Directory Traversal</label><br/>
+<label><input name="q24" type="radio" value="B"/> B. Insecure Direct Object References (IDOR)</label><br/>
+<label><input name="q24" type="radio" value="C"/> C. Race Condition</label><br/>
+<label><input name="q24" type="radio" value="D"/> D. Cross-Site Request Forgery (CSRF)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="24" type="button">Check Answer</button></div>
+<div class="explanation" id="exp24"><strong>Answer: C.</strong> Race Condition. When</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 148. Jane, a security analyst, receives a report about
+network slowdowns happening at specific times of the day.
+After investigating, she discovers that a device is flooding the
+network with traffic, causing legitimate requests to be dropped.
+Which type of attack is this device likely performing?</strong>
+<div class="options">
+<label><input name="q25" type="radio" value="A"/> A. Distributed Denial of Service (DDoS)</label><br/>
+<label><input name="q25" type="radio" value="B"/> B. ARP poisoning</label><br/>
+<label><input name="q25" type="radio" value="C"/> C. MAC flooding</label><br/>
+<label><input name="q25" type="radio" value="D"/> D. DNS amplification</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="25" type="button">Check Answer</button></div>
+<div class="explanation" id="exp25"><strong>Answer: C.</strong> MAC flooding. MAC</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 149. A software development team in a large
+corporation decided to use an unauthorized cloud-based tool to
+host and manage their source code. The team believed it would
+increase their productivity, even though it was not approved by
+the IT department. A few weeks later, unauthorized access to
+their project data was detected. Which threat actor concept
+BEST describes the situation?</strong>
+<div class="options">
+<label><input name="q26" type="radio" value="A"/> A. Insider threat</label><br/>
+<label><input name="q26" type="radio" value="B"/> B. Hacktivist</label><br/>
+<label><input name="q26" type="radio" value="C"/> C. Shadow IT</label><br/>
+<label><input name="q26" type="radio" value="D"/> D. Organized crime syndicate</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="26" type="button">Check Answer</button></div>
+<div class="explanation" id="exp26"><strong>Answer: C.</strong> Shadow IT. Shadow IT</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 155. The finance department of a global corporation
+found a series of unauthorized transactions originating from an
+employee’s workstation. Investigations revealed that the
+employee had been bypassing company policies to make
+unauthorized investments using company funds. Based on the
+attributes of the actor, how can this threat actor be best
+categorized?</strong>
+<div class="options">
+<label><input name="q27" type="radio" value="A"/> A. External actor leveraging malware</label><br/>
+<label><input name="q27" type="radio" value="B"/> B. External actor exploiting vulnerabilities</label><br/>
+<label><input name="q27" type="radio" value="C"/> C. Internal actor with direct access</label><br/>
+<label><input name="q27" type="radio" value="D"/> D. Internal actor with indirect access</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="27" type="button">Check Answer</button></div>
+<div class="explanation" id="exp27"><strong>Answer: C.</strong> Internal actor with</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 156. While conducting a security assessment, Lucy
+found that a specific application crashes when she inputs a
+string that is much longer than what the input field is designed
+to handle. This could potentially allow her to execute arbitrary
+code in the application’s context. What vulnerability is Lucy
+likely trying to exploit?</strong>
+<div class="options">
+<label><input name="q28" type="radio" value="A"/> A. SQL Injection</label><br/>
+<label><input name="q28" type="radio" value="B"/> B. Cross-Site Scripting (XSS)</label><br/>
+<label><input name="q28" type="radio" value="C"/> C. Buffer Overflow</label><br/>
+<label><input name="q28" type="radio" value="D"/> D. Directory Traversal</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="28" type="button">Check Answer</button></div>
+<div class="explanation" id="exp28"><strong>Answer: C.</strong> Buffer Overflow.</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 164. Jake recently ran an old game on his computer
+that he received from a friend. Shortly after, he discovered that
+some of his documents were duplicated with slight
+modifications, and his system’s performance was deteriorating.
+Which kind of malware most likely caused these issues?</strong>
+<div class="options">
+<label><input name="q29" type="radio" value="A"/> A. Adware</label><br/>
+<label><input name="q29" type="radio" value="B"/> B. Trojan</label><br/>
+<label><input name="q29" type="radio" value="C"/> C. Worm</label><br/>
+<label><input name="q29" type="radio" value="D"/> D. Virus</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="29" type="button">Check Answer</button></div>
+<div class="explanation" id="exp29"><strong>Answer: D.</strong> Virus. Viruses are</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 165. The IT department of an e-commerce company
+is configuring access controls for a new online product
+inventory system. They want the sales team to update the
+inventory levels and product details but don’t want them to
+access financial data stored in the same system. Which access
+control principle is the IT department applying?</strong>
+<div class="options">
+<label><input name="q30" type="radio" value="A"/> A. Least Privilege</label><br/>
+<label><input name="q30" type="radio" value="B"/> B. Role-Based Access Control (RBAC)</label><br/>
+<label><input name="q30" type="radio" value="C"/> C. Mandatory Access Control (MAC)</label><br/>
+<label><input name="q30" type="radio" value="D"/> D. User-Based Access Control (UBAC)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="30" type="button">Check Answer</button></div>
+<div class="explanation" id="exp30"><strong>Answer: B.</strong> Role-Based Access</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 170. A company is developing a new web application
+that will be processing highly sensitive user data. They want to
+ensure that if the web server is compromised, attackers cannot
+directly access the database or other critical infrastructure.
+Which of the following is the BEST strategy to achieve this
+objective?</strong>
+<div class="options">
+<label><input name="q31" type="radio" value="A"/> A. Use strong authentication methods for the web
+application</label><br/>
+<label><input name="q31" type="radio" value="B"/> B. Encrypt the user data at rest and in transit</label><br/>
+<label><input name="q31" type="radio" value="C"/> C. Place the web server and the database server in separate
+network segments</label><br/>
+<label><input name="q31" type="radio" value="D"/> D. Implement real-time monitoring of the web server</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="31" type="button">Check Answer</button></div>
+<div class="explanation" id="exp31"><strong>Answer: C.</strong> Place the web server</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 172. The IT department of a large organization
+receives reports from employees that they are unable to access
+certain resources on the network. Upon investigation, the IT
+department discovers that the Access Control List (ACL)
+settings have been recently modified. Which of the following
+would be the PRIMARY reason to review and modify the ACL
+settings?</strong>
+<div class="options">
+<label><input name="q32" type="radio" value="A"/> A. To balance the network load</label><br/>
+<label><input name="q32" type="radio" value="B"/> B. To update the organization's firewall rules.</label><br/>
+<label><input name="q32" type="radio" value="C"/> C. To ensure appropriate access rights to resources</label><br/>
+<label><input name="q32" type="radio" value="D"/> D. To update the organization's password policy</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="32" type="button">Check Answer</button></div>
+<div class="explanation" id="exp32"><strong>Answer: C.</strong> To ensure appropriate</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 174. During a routine security audit, a company
+discovered an unauthorized wireless access point using the
+same SSID as the company’s official wireless network.
+Additionally, this rogue access point was configured without
+any encryption. What type of wireless attack is this scenario
+most indicative of?</strong>
+<div class="options">
+<label><input name="q33" type="radio" value="A"/> A. War Driving</label><br/>
+<label><input name="q33" type="radio" value="B"/> B. Wireless Phishing</label><br/>
+<label><input name="q33" type="radio" value="C"/> C. Bluejacking</label><br/>
+<label><input name="q33" type="radio" value="D"/> D. Evil Twin</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="33" type="button">Check Answer</button></div>
+<div class="explanation" id="exp33"><strong>Answer: D.</strong> Evil Twin. An “Evil</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 176. A security analyst discovers that an external IP
+address has been repeatedly trying every possible combination
+of characters to gain access to the company’s VPN portal for the
+past two days. Which type of password attack is this MOST
+likely describing?</strong>
+<div class="options">
+<label><input name="q34" type="radio" value="A"/> A. Password Spraying</label><br/>
+<label><input name="q34" type="radio" value="B"/> B. Dictionary Attack</label><br/>
+<label><input name="q34" type="radio" value="C"/> C. Rainbow Table Attack</label><br/>
+<label><input name="q34" type="radio" value="D"/> D. Brute Force Attack</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="34" type="button">Check Answer</button></div>
+<div class="explanation" id="exp34"><strong>Answer: D.</strong> Brute Force Attack. A</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 178. A software developer at XYZ Corp included a
+piece of code in the company’s software that would corrupt the
+application’s databases if his name was ever removed from the
+list of contributors in the application credits. Months after he
+left the company, the application databases were corrupted after
+an update. What type of malware was responsible for this
+action?</strong>
+<div class="options">
+<label><input name="q35" type="radio" value="A"/> A. Trojan</label><br/>
+<label><input name="q35" type="radio" value="B"/> B. Spyware</label><br/>
+<label><input name="q35" type="radio" value="C"/> C. Adware</label><br/>
+<label><input name="q35" type="radio" value="D"/> D. Logic bomb</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="35" type="button">Check Answer</button></div>
+<div class="explanation" id="exp35"><strong>Answer: D.</strong> Logic bomb. A logic</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 179. A popular online shopping platform noticed that
+some product reviews contained a strange link which, when
+clicked, led users to a site that resembled the platform but
+harvested login credentials. What vulnerability in the review
+system might have allowed attackers to post such links?</strong>
+<div class="options">
+<label><input name="q36" type="radio" value="A"/> A. Session Hijacking</label><br/>
+<label><input name="q36" type="radio" value="B"/> B. Cross-site scripting (XSS)</label><br/>
+<label><input name="q36" type="radio" value="C"/> C. Password Spraying</label><br/>
+<label><input name="q36" type="radio" value="D"/> D. Credential Stuffing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="36" type="button">Check Answer</button></div>
+<div class="explanation" id="exp36"><strong>Answer: B.</strong> Cross-site scripting</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 186. During a security audit, a company realized that
+a malicious actor was able to situate themselves on the network
+path, capturing TLS handshake messages between clients and
+the server. The attacker’s goal is to weaken the encryption by
+influencing the cipher suite negotiation process. What type of
+network attack does this scenario depict?</strong>
+<div class="options">
+<label><input name="q37" type="radio" value="A"/> A. ARP Poisoning</label><br/>
+<label><input name="q37" type="radio" value="B"/> B. Downgrade Attack</label><br/>
+<label><input name="q37" type="radio" value="C"/> C. SYN Flood</label><br/>
+<label><input name="q37" type="radio" value="D"/> D. Ping of Death</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="37" type="button">Check Answer</button></div>
+<div class="explanation" id="exp37"><strong>Answer: B.</strong> Downgrade Attack. A</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 187. A developer has implemented a new feature on a
+company’s website that allows users to search for products by
+their names. Within a few days, the IT team noticed abnormal
+activities where entire tables from the database were being
+dumped. Which vulnerability might the new feature have
+introduced?</strong>
+<div class="options">
+<label><input name="q38" type="radio" value="A"/> A. Cross-Site Scripting (XSS)</label><br/>
+<label><input name="q38" type="radio" value="B"/> B. Distributed Denial-of-Service (DDoS)</label><br/>
+<label><input name="q38" type="radio" value="C"/> C. Structured Query Language injection (SQLi)</label><br/>
+<label><input name="q38" type="radio" value="D"/> D. Cross-Site Request Forgery (CSRF)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="38" type="button">Check Answer</button></div>
+<div class="explanation" id="exp38"><strong>Answer: C.</strong> Structured Query</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 192. A user reports that whenever they try to visit
+their online banking website, they are redirected to a website
+that looks identical but has a slightly different URL. The fake
+website asks for additional personal details that the bank never
+requested before. Which type of DNS attack is the user likely
+encountering?</strong>
+<div class="options">
+<label><input name="q39" type="radio" value="A"/> A. DNS Tunneling</label><br/>
+<label><input name="q39" type="radio" value="B"/> B. DNS Fast Flux</label><br/>
+<label><input name="q39" type="radio" value="C"/> C. DNS Cache Poisoning</label><br/>
+<label><input name="q39" type="radio" value="D"/> D. Domain Hijacking</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="39" type="button">Check Answer</button></div>
+<div class="explanation" id="exp39"><strong>Answer: C.</strong> DNS Cache Poisoning.</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 196. A large news website was rendered unavailable
+during a major news event. Network logs show an
+overwhelming amount of traffic from IoT devices. Which type
+of DDoS attack leveraged IoT devices is this indicative of?</strong>
+<div class="options">
+<label><input name="q40" type="radio" value="A"/> A. Reflected Attack</label><br/>
+<label><input name="q40" type="radio" value="B"/> B. Botnet Attack</label><br/>
+<label><input name="q40" type="radio" value="C"/> C. Amplification Attack</label><br/>
+<label><input name="q40" type="radio" value="D"/> D. Teardrop Attack</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="40" type="button">Check Answer</button></div>
+<div class="explanation" id="exp40"><strong>Answer: B.</strong> Botnet Attack. Botnets,</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 200. While reviewing web server logs, Sarah, a
+security analyst, notices a pattern of requests containing “..
+%2F..” in the URLs. She suspects this might be an attempt to
+exploit a vulnerability. Which type of application attack is likely
+being attempted?</strong>
+<div class="options">
+<label><input name="q41" type="radio" value="A"/> A. Command Injection</label><br/>
+<label><input name="q41" type="radio" value="B"/> B. Cross-Site Scripting (XSS)</label><br/>
+<label><input name="q41" type="radio" value="C"/> C. Directory Traversal</label><br/>
+<label><input name="q41" type="radio" value="D"/> D. Cross-Site Request Forgery (CSRF)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="41" type="button">Check Answer</button></div>
+<div class="explanation" id="exp41"><strong>Answer: C.</strong> Directory Traversal.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 201. A security analyst is reviewing network logs and
+notices that an attacker positioned in between the user and the
+target website is intercepting and potentially modifying the
+user’s communications before passing them on to the intended
+destination. This malicious activity occurs transparently, with
+neither the user nor the target website being aware. What type
+of network attack is being described?</strong>
+<div class="options">
+<label><input name="q42" type="radio" value="A"/> A. Replay Attack</label><br/>
+<label><input name="q42" type="radio" value="B"/> B. Smurf Attack</label><br/>
+<label><input name="q42" type="radio" value="C"/> C. On-path Attack</label><br/>
+<label><input name="q42" type="radio" value="D"/> D. Spoofing Attack</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="42" type="button">Check Answer</button></div>
+<div class="explanation" id="exp42"><strong>Answer: C.</strong> On-path Attack. An</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 207. During an organization’s security review, the
+cybersecurity analyst noticed that there were multiple failed
+login attempts for different user accounts, each with a few
+commonly used passwords. What type of password attack does
+this scenario BEST describe?</strong>
+<div class="options">
+<label><input name="q43" type="radio" value="A"/> A. Brute Force Attack</label><br/>
+<label><input name="q43" type="radio" value="B"/> B. Dictionary Attack</label><br/>
+<label><input name="q43" type="radio" value="C"/> C. Credential Stuffing</label><br/>
+<label><input name="q43" type="radio" value="D"/> D. Password Spraying</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="43" type="button">Check Answer</button></div>
+<div class="explanation" id="exp43"><strong>Answer: D.</strong> Password Spraying.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 211. An organization is choosing a hash function for
+digital signatures. They want to ensure that it is resistant to
+scenarios where an attacker might produce two different
+messages having the same hash. Which type of attack are they
+trying to defend against?</strong>
+<div class="options">
+<label><input name="q44" type="radio" value="A"/> A. Side-channel Attack</label><br/>
+<label><input name="q44" type="radio" value="B"/> B. Replay Attack</label><br/>
+<label><input name="q44" type="radio" value="C"/> C. Birthday Attack</label><br/>
+<label><input name="q44" type="radio" value="D"/> D. Ciphertext-only Attack</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="44" type="button">Check Answer</button></div>
+<div class="explanation" id="exp44"><strong>Answer: C.</strong> Birthday Attack. In a</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 214. Ella, a security analyst, is reviewing the logs of a
+web application and notices that an attacker attempted to use the
+following input in a login form: ' OR '1'='1' --. This input was
+used in an effort to manipulate the application’s backend
+database. What type of injection attack is this an example of?</strong>
+<div class="options">
+<label><input name="q45" type="radio" value="A"/> A. XML Injection</label><br/>
+<label><input name="q45" type="radio" value="B"/> B. Command Injection</label><br/>
+<label><input name="q45" type="radio" value="C"/> C. SQL Injection</label><br/>
+<label><input name="q45" type="radio" value="D"/> D. LDAP Injection</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="45" type="button">Check Answer</button></div>
+<div class="explanation" id="exp45"><strong>Answer: C.</strong> SQL Injection. The</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 217. A security auditor found that a website’s login
+form returns detailed error messages like “Incorrect column
+name” or “Table not found.” Which type of vulnerability could
+attackers potentially exploit using this information?</strong>
+<div class="options">
+<label><input name="q46" type="radio" value="A"/> A. Brute Force Attack</label><br/>
+<label><input name="q46" type="radio" value="B"/> B. Structured Query Language injection (SQLi)</label><br/>
+<label><input name="q46" type="radio" value="C"/> C. Man-in-the-Middle Attack</label><br/>
+<label><input name="q46" type="radio" value="D"/> D. Session Hijacking</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="46" type="button">Check Answer</button></div>
+<div class="explanation" id="exp46"><strong>Answer: B.</strong> Structured Query</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 222. A rapidly growing e-commerce company has
+recently experienced an increase in cross-site scripting (XSS)
+and SQL injection attacks. The company wants to deploy a
+solution that specifically protects against these threats at the
+application layer. Which type of firewall would be most
+appropriate?</strong>
+<div class="options">
+<label><input name="q47" type="radio" value="A"/> A. Stateful Packet Inspection Firewall</label><br/>
+<label><input name="q47" type="radio" value="B"/> B. Proxy Firewall</label><br/>
+<label><input name="q47" type="radio" value="C"/> C. Network Layer Firewall</label><br/>
+<label><input name="q47" type="radio" value="D"/> D. Web Application Firewall (WAF)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="47" type="button">Check Answer</button></div>
+<div class="explanation" id="exp47"><strong>Answer: D.</strong> Web Application</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 225. The software development team at ABC Corp.
+has created a unique application that utilizes innovative
+algorithms. The company wants to ensure that competitors
+cannot legally copy or replicate their application’s functionality.
+Which of the following would be the MOST suitable method to
+protect this intellectual property?</strong>
+<div class="options">
+<label><input name="q48" type="radio" value="A"/> A. Copyright the user interface design</label><br/>
+<label><input name="q48" type="radio" value="B"/> B. Apply for a patent for the innovative algorithms</label><br/>
+<label><input name="q48" type="radio" value="C"/> C. Store the application code in an encrypted vault</label><br/>
+<label><input name="q48" type="radio" value="D"/> D. Ensure all users sign an acceptable use policy (AUP)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="48" type="button">Check Answer</button></div>
+<div class="explanation" id="exp48"><strong>Answer: B.</strong> Apply for a patent for</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 228. In a microservices architecture, each service
+should be designed with a specific principle to ensure it
+performs a specific task and interacts with other services
+through well-defined interfaces. What principle is this referring
+to?</strong>
+<div class="options">
+<label><input name="q49" type="radio" value="A"/> A. Principle of Least Privilege</label><br/>
+<label><input name="q49" type="radio" value="B"/> B. Single Responsibility Principle</label><br/>
+<label><input name="q49" type="radio" value="C"/> C. Open-Closed Principle</label><br/>
+<label><input name="q49" type="radio" value="D"/> D. Zero Trust Model</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="49" type="button">Check Answer</button></div>
+<div class="explanation" id="exp49"><strong>Answer: B.</strong> Single Responsibility</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 229. An organization that processes classified
+information is implementing a network infrastructure to ensure
+the highest level of data security. The CISO recommends using
+a network configuration that ensures the system remains
+completely disconnected from unsecured networks and any
+external connections. Which of the following describes this type
+of configuration?</strong>
+<div class="options">
+<label><input name="q50" type="radio" value="A"/> A. DMZ (Demilitarized Zone)</label><br/>
+<label><input name="q50" type="radio" value="B"/> B. VPN (Virtual Private Network)</label><br/>
+<label><input name="q50" type="radio" value="C"/> C. VLAN (Virtual Local Area Network)</label><br/>
+<label><input name="q50" type="radio" value="D"/> D. Air-gapped network</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="50" type="button">Check Answer</button></div>
+<div class="explanation" id="exp50"><strong>Answer: D.</strong> Air-gapped network.</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 234. A smart city project is deploying various IoT
+sensors across the city to gather data on traffic patterns,
+weather, pollution levels, and more. Which of the following is
+the MOST critical security consideration when deploying these
+sensors?</strong>
+<div class="options">
+<label><input name="q51" type="radio" value="A"/> A. Ensuring high data transfer speeds to cater to the
+volume of data from the IoT sensors</label><br/>
+<label><input name="q51" type="radio" value="B"/> B. Limiting the IoT devices to communicate only with
+specific, pre-defined servers</label><br/>
+<label><input name="q51" type="radio" value="C"/> C. Installing physical locks on IoT devices to prevent theft</label><br/>
+<label><input name="q51" type="radio" value="D"/> D. Allowing IoT devices to connect to any available
+network for data redundancy</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="51" type="button">Check Answer</button></div>
+<div class="explanation" id="exp51"><strong>Answer: B.</strong> Limiting the IoT</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 239. In a cloud environment, which of the following
+matrices defines the shared responsibilities between the cloud
+provider and the customer for specific cloud service models?</strong>
+<div class="options">
+<label><input name="q52" type="radio" value="A"/> A. Shared Accountability Matrix</label><br/>
+<label><input name="q52" type="radio" value="B"/> B. Cloud Resource Allocation Table</label><br/>
+<label><input name="q52" type="radio" value="C"/> C. Cloud Security Posture Matrix</label><br/>
+<label><input name="q52" type="radio" value="D"/> D. Cloud Responsibility Matrix</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="52" type="button">Check Answer</button></div>
+<div class="explanation" id="exp52"><strong>Answer: D.</strong> Cloud Responsibility</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 240. A financial organization collects and stores
+personally identifiable information (PII) of its customers. The
+company operates within jurisdictions that have strict
+regulations concerning the storage, transmission, and processing
+of such data. Which of the following strategies would be MOST
+appropriate for the company to ensure compliance with these
+regulations?</strong>
+<div class="options">
+<label><input name="q53" type="radio" value="A"/> A. Use open source encryption algorithms without
+validation</label><br/>
+<label><input name="q53" type="radio" value="B"/> B. Only store customer data in physical, on-site servers</label><br/>
+<label><input name="q53" type="radio" value="C"/> C. Implement data classification and labeling procedures</label><br/>
+<label><input name="q53" type="radio" value="D"/> D. Limit the number of administrators with access to the
+Data</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="53" type="button">Check Answer</button></div>
+<div class="explanation" id="exp53"><strong>Answer: C.</strong> Implement data</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 249. A medium-sized e-commerce company recently
+experienced a data breach due to an external attack. Postincident
+analysis revealed that while there were indications of
+the attack in their network traffic, no alarms were raised at the
+time of the attack. The company now wants to implement a
+solution to actively monitor and take action against malicious
+network traffic. Which of the following should they deploy?</strong>
+<div class="options">
+<label><input name="q54" type="radio" value="A"/> A. Intrusion Detection System (IDS)</label><br/>
+<label><input name="q54" type="radio" value="B"/> B. Network Access Control (NAC)</label><br/>
+<label><input name="q54" type="radio" value="C"/> C. Proxy server</label><br/>
+<label><input name="q54" type="radio" value="D"/> D. Intrusion Prevention System (IPS)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="54" type="button">Check Answer</button></div>
+<div class="explanation" id="exp54"><strong>Answer: D.</strong> Intrusion Prevention</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 272. An online payment gateway is evaluating
+methods to enhance the security of its payment processing
+system. They want a solution that replaces sensitive cardholder
+data with a unique identifier that has no intrinsic value by itself.
+Which method should they implement?</strong>
+<div class="options">
+<label><input name="q55" type="radio" value="A"/> A. Hashing the card data</label><br/>
+<label><input name="q55" type="radio" value="B"/> B. Encrypting the card data</label><br/>
+<label><input name="q55" type="radio" value="C"/> C. Masking the card data</label><br/>
+<label><input name="q55" type="radio" value="D"/> D. Tokenizing the card data</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="55" type="button">Check Answer</button></div>
+<div class="explanation" id="exp55"><strong>Answer: D.</strong> Tokenizing the card</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 291. An international bank is setting up a new online
+portal for its customers to access their financial statements.
+Which measure should the bank implement to ensure that
+financial data in transit between the customer’s browser and the
+bank’s servers is kept confidential?</strong>
+<div class="options">
+<label><input name="q56" type="radio" value="A"/> A. Use file-level encryption for all financial statements</label><br/>
+<label><input name="q56" type="radio" value="B"/> B. Implement a Web Application Firewall (WAF)</label><br/>
+<label><input name="q56" type="radio" value="C"/> C. Use Secure Sockets Layer (SSL) or Transport Layer
+Security (TLS) for the portal</label><br/>
+<label><input name="q56" type="radio" value="D"/> D. Store all financial data in an encrypted database</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="56" type="button">Check Answer</button></div>
+<div class="explanation" id="exp56"><strong>Answer: C.</strong> Use Secure Sockets</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 294. A financial institution is updating its
+infrastructure to ensure that customer financial data is kept
+secure from both internal and external threats. Which of the
+following would be the MOST effective measure to protect
+customer financial data from being accessed by unauthorized
+internal users?</strong>
+<div class="options">
+<label><input name="q57" type="radio" value="A"/> A. Deploying perimeter firewalls around the institution's
+network</label><br/>
+<label><input name="q57" type="radio" value="B"/> B. Implementing two-factor authentication (2FA) for all
+customer accounts</label><br/>
+<label><input name="q57" type="radio" value="C"/> C. Enforcing strict access controls based on the principle of
+least privilege</label><br/>
+<label><input name="q57" type="radio" value="D"/> D. Conducting yearly cybersecurity awareness training for
+all employees</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="57" type="button">Check Answer</button></div>
+<div class="explanation" id="exp57"><strong>Answer: C.</strong> Enforcing strict access</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 305. SecureNet Inc. recently upgraded their security
+infrastructure. To validate how the new system would respond
+in real-world scenarios without exposing it to actual risks, they
+decide to imitate certain cyber threats in a controlled
+environment. Which type of test is SecureNet Inc. planning to
+conduct?</strong>
+<div class="options">
+<label><input name="q58" type="radio" value="A"/> A. Penetration Testing</label><br/>
+<label><input name="q58" type="radio" value="B"/> B. Simulation Testing</label><br/>
+<label><input name="q58" type="radio" value="C"/> C. Vulnerability Assessment</label><br/>
+<label><input name="q58" type="radio" value="D"/> D. Failover Testing.</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="58" type="button">Check Answer</button></div>
+<div class="explanation" id="exp58"><strong>Answer: B.</strong> Simulation Testing.</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 309. A tech startup is developing a mobile application
+that offers exclusive content only to users within a specific
+country due to licensing agreements. Which method should the
+startup use to ensure that only users within that country can
+access the content?</strong>
+<div class="options">
+<label><input name="q59" type="radio" value="A"/> A. Integrate a time-based one-time password (TOTP)
+system</label><br/>
+<label><input name="q59" type="radio" value="B"/> B. Use geolocation-based access controls</label><br/>
+<label><input name="q59" type="radio" value="C"/> C. Enable biometric authentication</label><br/>
+<label><input name="q59" type="radio" value="D"/> D. Implement IP whitelisting</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="59" type="button">Check Answer</button></div>
+<div class="explanation" id="exp59"><strong>Answer: B.</strong> Use geolocation-based</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 310. MetroTech recently experienced an incident
+where an employee mistakenly deleted a portion of their
+database. The IT team was able to restore the data using a
+backup snapshot taken 24 hours prior. However, some data loss
+still occurred. Which of the following recommendations would
+minimize data loss in a similar situation in the future?</strong>
+<div class="options">
+<label><input name="q60" type="radio" value="A"/> A. Configure backup snapshots to be taken on a weekly
+basis</label><br/>
+<label><input name="q60" type="radio" value="B"/> B. Employ a differential backup solution in addition to
+snapshots</label><br/>
+<label><input name="q60" type="radio" value="C"/> C. Increase the storage capacity for backups</label><br/>
+<label><input name="q60" type="radio" value="D"/> D. Use an hourly snapshot backup schedule</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="60" type="button">Check Answer</button></div>
+<div class="explanation" id="exp60"><strong>Answer: D.</strong> Use an hourly</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 313. After a series of cyberattacks, BetaTech, a
+financial institution, decided to standardize the configurations
+across its entire server fleet. They’ve established a secure
+baseline configuration for their servers. What should be the
+NEXT step in ensuring the servers conform to this new
+baseline?</strong>
+<div class="options">
+<label><input name="q61" type="radio" value="A"/> A. Frequently conduct vulnerability scanning on all servers</label><br/>
+<label><input name="q61" type="radio" value="B"/> B. Introduce biometric authentication for server access</label><br/>
+<label><input name="q61" type="radio" value="C"/> C. Deploy the secure baseline across all servers</label><br/>
+<label><input name="q61" type="radio" value="D"/> D. Monitor network traffic to detect anomalies</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="61" type="button">Check Answer</button></div>
+<div class="explanation" id="exp61"><strong>Answer: C.</strong> Deploy the secure</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 316. A large e-commerce company wants to ensure
+that their newly developed application is free from any code
+vulnerabilities before it is deployed to the production
+environment. They want to catch any software flaws, especially
+those that might lead to potential security risks. Which of the
+following methodologies should they employ?</strong>
+<div class="options">
+<label><input name="q62" type="radio" value="A"/> A. Runtime application self-protection (RASP)</label><br/>
+<label><input name="q62" type="radio" value="B"/> B. Penetration testing on the live application</label><br/>
+<label><input name="q62" type="radio" value="C"/> C. Static code analysis</label><br/>
+<label><input name="q62" type="radio" value="D"/> D. User acceptance testing (UAT)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="62" type="button">Check Answer</button></div>
+<div class="explanation" id="exp62"><strong>Answer: C.</strong> Static code analysis.</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 319. DeltaSoft has released a new web application.
+The security team is tasked with observing the application’s
+behavior and responses when it is running to identify potential
+vulnerabilities. Which method is most appropriate for this
+purpose?</strong>
+<div class="options">
+<label><input name="q63" type="radio" value="A"/> A. Static Analysis</label><br/>
+<label><input name="q63" type="radio" value="B"/> B. Fuzz Testing</label><br/>
+<label><input name="q63" type="radio" value="C"/> C. Whitebox Testing</label><br/>
+<label><input name="q63" type="radio" value="D"/> D. Dynamic Analysis</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="63" type="button">Check Answer</button></div>
+<div class="explanation" id="exp63"><strong>Answer: D.</strong> Dynamic Analysis.</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 322. ClearView Industries wants to give their
+employees the flexibility to choose their own devices for work
+while retaining control over the device configurations and
+applications. Which deployment model would be the MOST
+appropriate for ClearView’s objectives?</strong>
+<div class="options">
+<label><input name="q64" type="radio" value="A"/> A. Bring Your Own Device (BYOD)</label><br/>
+<label><input name="q64" type="radio" value="B"/> B. Choose Your Own Device (CYOD)</label><br/>
+<label><input name="q64" type="radio" value="C"/> C. Corporate-owned, Personally Enabled (COPE)</label><br/>
+<label><input name="q64" type="radio" value="D"/> D. Fixed Device Deployment (FDD)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="64" type="button">Check Answer</button></div>
+<div class="explanation" id="exp64"><strong>Answer: B.</strong> Choose Your Own</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 325. A university is looking to revamp its wireless
+network to provide secure access for students and faculty. The
+IT department wants an authentication method that leverages a
+centralized server to validate user credentials and can integrate
+with their existing directory service. Which authentication
+protocol should they consider?</strong>
+<div class="options">
+<label><input name="q65" type="radio" value="A"/> A. Pre-shared Key (PSK)</label><br/>
+<label><input name="q65" type="radio" value="B"/> B. Lightweight Extensible Authentication Protocol (LEAP)</label><br/>
+<label><input name="q65" type="radio" value="C"/> C. Extensible Authentication Protocol-Transport Layer
+Security (EAP-TLS)</label><br/>
+<label><input name="q65" type="radio" value="D"/> D. Shared Secret Challenge</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="65" type="button">Check Answer</button></div>
+<div class="explanation" id="exp65"><strong>Answer: C.</strong> Extensible</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 326. TechHive Corp. is planning to sell some of its
+old servers. Before selling, they want to ensure that no
+retrievable personal or business data remains on the hard drives.
+Which of the following methods should TechHive use to ensure
+the drives are clean and the data cannot be recovered?</strong>
+<div class="options">
+<label><input name="q66" type="radio" value="A"/> A. Simple Format</label><br/>
+<label><input name="q66" type="radio" value="B"/> B. Magnetic Wiping</label><br/>
+<label><input name="q66" type="radio" value="C"/> C. Physical Destruction</label><br/>
+<label><input name="q66" type="radio" value="D"/> D. Standard Defragmentation</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="66" type="button">Check Answer</button></div>
+<div class="explanation" id="exp66"><strong>Answer: B.</strong> Magnetic Wiping.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 333. After running a vulnerability scan on the
+company’s infrastructure, a security analyst notices a reported
+vulnerability on a server. However, after manual verification,
+the analyst determines that the vulnerability doesn’t actually
+exist on the server. What is this situation best described as?</strong>
+<div class="options">
+<label><input name="q67" type="radio" value="A"/> A. A false negative</label><br/>
+<label><input name="q67" type="radio" value="B"/> B. A true positive</label><br/>
+<label><input name="q67" type="radio" value="C"/> C. A false positive</label><br/>
+<label><input name="q67" type="radio" value="D"/> D. A confirmation bias</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="67" type="button">Check Answer</button></div>
+<div class="explanation" id="exp67"><strong>Answer: C.</strong> A false positive. A false</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 335. A security analyst is reviewing a vulnerability
+report and sees a reference to CVE-2023-12345 with a CVSS
+score of 9.5. Which of the following conclusions can the analyst
+draw based on this information?</strong>
+<div class="options">
+<label><input name="q68" type="radio" value="A"/> A. The vulnerability was first identified in the year 2023</label><br/>
+<label><input name="q68" type="radio" value="B"/> B. The vulnerability is of low severity</label><br/>
+<label><input name="q68" type="radio" value="C"/> C. The vulnerability affects only software produced in
+2023</label><br/>
+<label><input name="q68" type="radio" value="D"/> D. CVE-2023-12345 is the software vendor's internal code
+for the vulnerability
+
+Question 335. A security analyst is reviewing a vulnerability
+report and sees a reference to CVE-2023-12345 with a CVSS
+528
+score of 9.5. Which of the following conclusions can the analyst
+draw based on this information?
+(A) The vulnerability was first identified in the year 2023
+(B) The vulnerability is of low severity
+(C) The vulnerability affects only software produced in
+2023
+(D) CVE-2023-12345 is the software vendor's internal code
+for the vulnerability
+
+Question 337. ABC Corp recently adopted a Bring Your Own
+Device (BYOD) policy. The IT department is concerned about
+the potential risks associated with personal devices accessing
+the corporate network. Which of the following solutions would
+be MOST effective for enforcing security policies on these
+personal mobile devices?
+(A) Installing antivirus software on each device
+(B) Establishing a separate guest Wi-Fi network for mobile
+devices
+(C) Using Mobile Device Management (MDM) to enforce
+security policies
+(D) Mandating that employees use strong passwords on
+their personal devices</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="68" type="button">Check Answer</button></div>
+<div class="explanation" id="exp68"><strong>Answer: C.</strong> Using Mobile Device</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 339. A security team recently upgraded their intrusion
+detection system (IDS). Since the upgrade, the system hasn’t
+flagged any intrusions, even though intrusion attempts are a
+regular occurrence. What is this situation best characterized as?</strong>
+<div class="options">
+<label><input name="q69" type="radio" value="A"/> A. A true negative</label><br/>
+<label><input name="q69" type="radio" value="B"/> B. A false negative</label><br/>
+<label><input name="q69" type="radio" value="C"/> C. A true positive</label><br/>
+<label><input name="q69" type="radio" value="D"/> D. A confirmation feedback</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="69" type="button">Check Answer</button></div>
+<div class="explanation" id="exp69"><strong>Answer: B.</strong> A false negative. A</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 348. A medium-sized enterprise is concerned about
+the security of its office workstations after a series of malware
+infections. As a security analyst, which of the following
+recommendations would BEST improve the security baseline of
+the workstations?</strong>
+<div class="options">
+<label><input name="q70" type="radio" value="A"/> A. Install multiple antivirus solutions to ensure maximum
+detection</label><br/>
+<label><input name="q70" type="radio" value="B"/> B. Set up screensavers with cyber hygiene tips to educate
+users</label><br/>
+<label><input name="q70" type="radio" value="C"/> C. Disable unnecessary services and ports on the
+workstations</label><br/>
+<label><input name="q70" type="radio" value="D"/> D. Frequently change the desktop wallpaper to prevent
+Monotony</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="70" type="button">Check Answer</button></div>
+<div class="explanation" id="exp70"><strong>Answer: C.</strong> Disable unnecessary</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 351. While analyzing a vulnerability in a company’s
+web application, the security team refers to a specific CVE to
+understand the vulnerability’s details. They further assess its
+CVSS score to decide on the remediation urgency. Which of the
+following best describes the purpose of the CVE and CVSS in
+this context?</strong>
+<div class="options">
+<label><input name="q71" type="radio" value="A"/> A. CVE provides a severity score, while CVSS gives a
+unique identifier for the vulnerability</label><br/>
+<label><input name="q71" type="radio" value="B"/> B. CVE and CVSS both offer a scoring mechanism to rank
+vulnerabilities</label><br/>
+<label><input name="q71" type="radio" value="C"/> C. CVE provides a unique identifier, while CVSS offers a
+standardized severity score</label><br/>
+<label><input name="q71" type="radio" value="D"/> D. CVE and CVSS are regulatory requirements for all
+software applications</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="71" type="button">Check Answer</button></div>
+<div class="explanation" id="exp71"><strong>Answer: C.</strong> CVE provides a</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 353. As part of the company’s vulnerability
+management initiative, the security team has decided to conduct
+a series of penetration tests. Which of the following is the
+PRIMARY reason for incorporating penetration testing as a
+threat identification method?</strong>
+<div class="options">
+<label><input name="q72" type="radio" value="A"/> A. To ensure compliance with regulatory requirements</label><br/>
+<label><input name="q72" type="radio" value="B"/> B. To validate the efficiency of security awareness training</label><br/>
+<label><input name="q72" type="radio" value="C"/> C. To actively exploit vulnerabilities and assess potential
+impact</label><br/>
+<label><input name="q72" type="radio" value="D"/> D. To identify misconfigurations in the SIEM system</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="72" type="button">Check Answer</button></div>
+<div class="explanation" id="exp72"><strong>Answer: C.</strong> To actively exploit</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 367. A marketing team is collaborating on a new
+campaign and requires access to a shared folder. However, they
+shouldn’t be able to modify files created by others. How should
+permissions be set on this shared folder?</strong>
+<div class="options">
+<label><input name="q73" type="radio" value="A"/> A. Assign the marketing team full control</label><br/>
+<label><input name="q73" type="radio" value="B"/> B. Allow the marketing team read-only access</label><br/>
+<label><input name="q73" type="radio" value="C"/> C. Assign the marketing team write-only access</label><br/>
+<label><input name="q73" type="radio" value="D"/> D. Assign the marketing team modify permission but deny
+the delete permission</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="73" type="button">Check Answer</button></div>
+<div class="explanation" id="exp73"><strong>Answer: D.</strong> Assign the marketing</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 369. Globex Industries is expanding its data centers
+across multiple geographic locations. The IT team wants to have
+a centralized system to get real-time status, outages, and metrics
+of all data center infrastructures. Which of the following
+solutions would be the MOST effective for this purpose?</strong>
+<div class="options">
+<label><input name="q74" type="radio" value="A"/> A. Data Loss Prevention (DLP) tools</label><br/>
+<label><input name="q74" type="radio" value="B"/> B. Distributed Denial of Service (DDoS) protection</label><br/>
+<label><input name="q74" type="radio" value="C"/> C. Security Information and Event Management (SIEM)</label><br/>
+<label><input name="q74" type="radio" value="D"/> D. Infrastructure Management Platform (IMP)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="74" type="button">Check Answer</button></div>
+<div class="explanation" id="exp74"><strong>Answer: D.</strong> Infrastructure</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 372. Lisa, a security administrator, is using a popular
+benchmark to ensure the web servers in her organization are
+configured securely. She wants to make sure that unnecessary
+services are disabled, and appropriate permissions are set.
+Which of the following organizations is MOST likely the source
+of the benchmark she is using?</strong>
+<div class="options">
+<label><input name="q75" type="radio" value="A"/> A. PCI DSS</label><br/>
+<label><input name="q75" type="radio" value="B"/> B. OWASP</label><br/>
+<label><input name="q75" type="radio" value="C"/> C. CIS</label><br/>
+<label><input name="q75" type="radio" value="D"/> D. GDPR</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="75" type="button">Check Answer</button></div>
+<div class="explanation" id="exp75"><strong>Answer: C.</strong> CIS. The Center for</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 373. The IT department at TechCorp Ltd has been
+instructed to ensure that critical system files remain unchanged
+to avoid potential security breaches. They want to implement a
+system that can provide alerts whenever there is an
+unauthorized change to these files. Which of the following
+would best serve this purpose?</strong>
+<div class="options">
+<label><input name="q76" type="radio" value="A"/> A. Data Loss Prevention (DLP)</label><br/>
+<label><input name="q76" type="radio" value="B"/> B. Intrusion Detection System (IDS)</label><br/>
+<label><input name="q76" type="radio" value="C"/> C. File Integrity Monitoring (FIM)</label><br/>
+<label><input name="q76" type="radio" value="D"/> D. Remote Monitoring and Management (RMM)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="76" type="button">Check Answer</button></div>
+<div class="explanation" id="exp76"><strong>Answer: C.</strong> File Integrity</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 374. ABC Tech has a mixed environment with both
+Linux and Windows servers. They want to ensure that processes
+running on their Linux servers only have access to specific
+resources and are restricted from performing certain actions.
+Which of the following tools would be most appropriate for this
+task?</strong>
+<div class="options">
+<label><input name="q77" type="radio" value="A"/> A. Use Group Policy on their Windows servers and apply it
+to Linux servers</label><br/>
+<label><input name="q77" type="radio" value="B"/> B. Implement a strict user training regimen to inform users
+about security best practices</label><br/>
+<label><input name="q77" type="radio" value="C"/> C. Enable Security-Enhanced Linux (SELinux) in
+enforcing mode</label><br/>
+<label><input name="q77" type="radio" value="D"/> D. Limit user access to Linux servers</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="77" type="button">Check Answer</button></div>
+<div class="explanation" id="exp77"><strong>Answer: C.</strong> Enable Security-</div>
+</div>
+<div class="question" data-answer="A">
+<strong>Question 379. A large financial institution recently experienced
+a security breach where an attacker was able to bypass its
+intrusion detection system (IDS). Upon investigation, the
+security team found out that the attacker utilized a zero-day
+exploit. In the aftermath, what should the institution do to
+enhance the capability of its IDS?</strong>
+<div class="options">
+<label><input name="q78" type="radio" value="A"/> A. Switch from a signature-based IDS to a behavior-based
+IDS</label><br/>
+<label><input name="q78" type="radio" value="B"/> B. Disable the IDS and rely solely on firewall rules</label><br/>
+<label><input name="q78" type="radio" value="C"/> C. Update the IDS with the latest threat intelligence feeds
+and signatures</label><br/>
+<label><input name="q78" type="radio" value="D"/> D. Reduce the frequency of IDS signature updates</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="78" type="button">Check Answer</button></div>
+<div class="explanation" id="exp78"><strong>Answer: A.</strong> Switch from a</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 384. A financial firm has just experienced a cyber
+attack, and the IT team identified a piece of malware that
+evaded their traditional antivirus solutions. The CISO now
+wants to not only detect but also be able to analyze and respond
+to such advanced threats in real-time. Which solution should the
+firm consider implementing?</strong>
+<div class="options">
+<label><input name="q79" type="radio" value="A"/> A. Vulnerability Scanner</label><br/>
+<label><input name="q79" type="radio" value="B"/> B. Intrusion Prevention System (IPS)</label><br/>
+<label><input name="q79" type="radio" value="C"/> C. Endpoint Detection and Response (EDR)</label><br/>
+<label><input name="q79" type="radio" value="D"/> D. Patch Management System</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="79" type="button">Check Answer</button></div>
+<div class="explanation" id="exp79"><strong>Answer: C.</strong> Endpoint Detection</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 389. A global manufacturing company wants to
+ensure its employees worldwide do not access websites
+promoting hate speech, gambling, or explicit content during
+working hours. To meet this requirement, which web filtering
+technique would be the most efficient?</strong>
+<div class="options">
+<label><input name="q80" type="radio" value="A"/> A. Deploy a centralized proxy with location-based filtering</label><br/>
+<label><input name="q80" type="radio" value="B"/> B. Use a blacklist of specific URLs known to contain such
+content</label><br/>
+<label><input name="q80" type="radio" value="C"/> C. Implement content categorization and block undesired
+categories</label><br/>
+<label><input name="q80" type="radio" value="D"/> D. Monitor internet usage logs and reprimand violators</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="80" type="button">Check Answer</button></div>
+<div class="explanation" id="exp80"><strong>Answer: C.</strong> Implement content</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 406. An e-commerce company is rolling out a new
+web application to facilitate online payments. The IT
+department wants to be immediately notified of any application
+errors or unauthorized modifications to the application’s
+codebase. Which of the following tools should they implement?</strong>
+<div class="options">
+<label><input name="q81" type="radio" value="A"/> A. Web Application Firewall (WAF)</label><br/>
+<label><input name="q81" type="radio" value="B"/> B. Application Performance Monitoring (APM)</label><br/>
+<label><input name="q81" type="radio" value="C"/> C. Domain Name System (DNS) monitoring tool</label><br/>
+<label><input name="q81" type="radio" value="D"/> D. Network flow analyzer</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="81" type="button">Check Answer</button></div>
+<div class="explanation" id="exp81"><strong>Answer: B.</strong> Application</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 407. Paul, a network administrator, has configured
+various networking devices in his organization to send alerts in
+the event of specific failures. After a switch experienced a
+power supply failure, Paul received an immediate notification.
+Which of the following did Paul most likely utilize to receive
+this notification?</strong>
+<div class="options">
+<label><input name="q82" type="radio" value="A"/> A. Syslog server</label><br/>
+<label><input name="q82" type="radio" value="B"/> B. Simple Network Management Protocol (SNMP) traps</label><br/>
+<label><input name="q82" type="radio" value="C"/> C. Packet sniffer</label><br/>
+<label><input name="q82" type="radio" value="D"/> D. Firewall logs</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="82" type="button">Check Answer</button></div>
+<div class="explanation" id="exp82"><strong>Answer: B.</strong> Simple Network</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 408. DeltaCorp, a retail company, has assessed that a
+security breach might result in a loss of $1 million in sales. The
+company has determined that they can tolerate a loss of up to
+$500,000, but anything beyond that would severely impact
+operations. To cover the potential financial loss beyond their
+tolerance level, they decide to purchase cybersecurity insurance.
+Which of the following terms best describes the $500,000
+figure?</strong>
+<div class="options">
+<label><input name="q83" type="radio" value="A"/> A. Risk appetite</label><br/>
+<label><input name="q83" type="radio" value="B"/> B. Risk threshold</label><br/>
+<label><input name="q83" type="radio" value="C"/> C. Risk capacity</label><br/>
+<label><input name="q83" type="radio" value="D"/> D. Risk assessment</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="83" type="button">Check Answer</button></div>
+<div class="explanation" id="exp83"><strong>Answer: B.</strong> Risk threshold. The</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 410. After a recent security incident, Sarah, a network
+security analyst, wants to analyze the flow data of network
+traffic to identify patterns and potential threats. She wants to
+collect metadata about IP traffic flow and gather details like IP
+addresses, ports, and protocols used. Which tool should Sarah
+employ to obtain this information?</strong>
+<div class="options">
+<label><input name="q84" type="radio" value="A"/> A. Intrusion Detection System (IDS)</label><br/>
+<label><input name="q84" type="radio" value="B"/> B. Syslog server</label><br/>
+<label><input name="q84" type="radio" value="C"/> C. NetFlow collector</label><br/>
+<label><input name="q84" type="radio" value="D"/> D. Simple Network Management Protocol (SNMP) traps</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="84" type="button">Check Answer</button></div>
+<div class="explanation" id="exp84"><strong>Answer: C.</strong> NetFlow collector.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 417. At ExamsDigest, employees can access the
+company’s cloud-based storage system. However, access to
+certain files within the storage is determined by the employee’s
+department, job title, and years of service. For instance, senior
+managers in the finance department with more than five years
+of service can view the company’s financial forecasts. Which
+access control model is ExamsDigest using?</strong>
+<div class="options">
+<label><input name="q85" type="radio" value="A"/> A. Rule-Based Access Control (RAC)</label><br/>
+<label><input name="q85" type="radio" value="B"/> B. Role-Based Access Control (RBAC)</label><br/>
+<label><input name="q85" type="radio" value="C"/> C. Attribute-Based Access Control (ABAC)</label><br/>
+<label><input name="q85" type="radio" value="D"/> D. Discretionary Access Control (DAC)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="85" type="button">Check Answer</button></div>
+<div class="explanation" id="exp85"><strong>Answer: C.</strong> Attribute-Based</div>
+</div>
+<div class="question" data-answer="A">
+<strong>Question 419. DeltaCorp has a password policy in place which
+mandates users to change their passwords every 30 days.
+However, some users complain that this results in them
+choosing simpler passwords or writing them down to remember
+them. How can DeltaCorp maintain security while addressing
+these concerns?</strong>
+<div class="options">
+<label><input name="q86" type="radio" value="A"/> A. Reduce the password change frequency but introduce
+more complexity requirements</label><br/>
+<label><input name="q86" type="radio" value="B"/> B. Eliminate password changes and rely solely on twofactor
+authentication</label><br/>
+<label><input name="q86" type="radio" value="C"/> C. Ask users to change passwords every week to improve
+security</label><br/>
+<label><input name="q86" type="radio" value="D"/> D. Allow users</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="86" type="button">Check Answer</button></div>
+<div class="explanation" id="exp86"><strong>Answer: A.</strong> Reduce the password</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 420. During a review of IDS logs, a security specialist
+notices a series of alerts indicating that a single external IP has
+been sending payloads that exploit a known vulnerability.
+However, the internal system to which these payloads are sent is
+patched and is not vulnerable to the exploit. Which of the
+following describes this type of IDS alert?</strong>
+<div class="options">
+<label><input name="q87" type="radio" value="A"/> A. False positive</label><br/>
+<label><input name="q87" type="radio" value="B"/> B. False negative</label><br/>
+<label><input name="q87" type="radio" value="C"/> C. True positive</label><br/>
+<label><input name="q87" type="radio" value="D"/> D. True negative</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="87" type="button">Check Answer</button></div>
+<div class="explanation" id="exp87"><strong>Answer: C.</strong> True positive. A true</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 427. GammaTech has a new remote access policy for
+its employees. Whenever an employee attempts to access the
+corporate network from an unfamiliar location, the system
+requests additional verification before granting access. Which
+factor of authentication is being emphasized in this policy?</strong>
+<div class="options">
+<label><input name="q88" type="radio" value="A"/> A. Knowledge-based questions the employee answers</label><br/>
+<label><input name="q88" type="radio" value="B"/> B. A fingerprint scan from the employee</label><br/>
+<label><input name="q88" type="radio" value="C"/> C. The physical coordinates of the employee's access point</label><br/>
+<label><input name="q88" type="radio" value="D"/> D. An SMS code sent to the employee's phone</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="88" type="button">Check Answer</button></div>
+<div class="explanation" id="exp88"><strong>Answer: C.</strong> The physical</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 434. During a suspected security incident involving
+unauthorized access to sensitive data, Jake, an IT administrator,
+immediately disconnected the affected server from the network.
+Later, a digital forensic expert criticized Jake’s action. Which of
+the following is the MOST likely reason for the criticism?</strong>
+<div class="options">
+<label><input name="q89" type="radio" value="A"/> A. Jake should have left the server connected to capture
+more evidence from the attacker</label><br/>
+<label><input name="q89" type="radio" value="B"/> B. Jake should have immediately informed the company's
+legal department</label><br/>
+<label><input name="q89" type="radio" value="C"/> C. Jake should have taken an image of the server's memory
+before disconnecting it</label><br/>
+<label><input name="q89" type="radio" value="D"/> D. Jake should have updated the server's software to
+prevent further unauthorized access</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="89" type="button">Check Answer</button></div>
+<div class="explanation" id="exp89"><strong>Answer: C.</strong> Jake should have</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 436. After a security breach, Jake, a digital forensics
+investigator, arrives at the scene to collect a hard drive for
+examination. He labels the hard drive, records its serial number,
+photographs the scene, and ensures the hard drive is transported
+securely to the forensics lab. These steps are crucial to:</strong>
+<div class="options">
+<label><input name="q90" type="radio" value="A"/> A. Preserve the data's integrity on the hard drive</label><br/>
+<label><input name="q90" type="radio" value="B"/> B. Maintain the chain of custody</label><br/>
+<label><input name="q90" type="radio" value="C"/> C. Decrypt the data on the hard drive</label><br/>
+<label><input name="q90" type="radio" value="D"/> D. Implement a legal hold on the data</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="90" type="button">Check Answer</button></div>
+<div class="explanation" id="exp90"><strong>Answer: B.</strong> Maintain the chain of</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 445. AlphaCorp’s IT department is reviewing
+password policies and wants to adopt a strategy that enhances
+security. Which of the following password strategies would be
+the MOST secure?</strong>
+<div class="options">
+<label><input name="q91" type="radio" value="A"/> A. Passwords should be at least 6 characters long, with no
+other requirements</label><br/>
+<label><input name="q91" type="radio" value="B"/> B. Passwords should be at least 10 characters long and
+include both uppercase and lowercase letters</label><br/>
+<label><input name="q91" type="radio" value="C"/> C. Passwords should be at least 8 characters long and
+include uppercase letters, lowercase letters, numbers, and
+special characters</label><br/>
+<label><input name="q91" type="radio" value="D"/> D. Passwords should be at least 4 characters long and
+include a mix of uppercase and lowercase letters</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="91" type="button">Check Answer</button></div>
+<div class="explanation" id="exp91"><strong>Answer: C.</strong> Passwords should be</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 448. DeltaTech, a progressive tech firm, is aiming to
+improve its security posture by eliminating the vulnerabilities
+associated with password use. They are considering deploying a
+passwordless authentication system. Which of the following
+represents the PRIMARY advantage of such a system?</strong>
+<div class="options">
+<label><input name="q92" type="radio" value="A"/> A. It allows users to choose any password complexity</label><br/>
+<label><input name="q92" type="radio" value="B"/> B. It eliminates the need for remembering passwords</label><br/>
+<label><input name="q92" type="radio" value="C"/> C. It guarantees protection against all cyber threats</label><br/>
+<label><input name="q92" type="radio" value="D"/> D. It ensures compatibility with all legacy systems</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="92" type="button">Check Answer</button></div>
+<div class="explanation" id="exp92"><strong>Answer: B.</strong> It eliminates the need</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 452. The cybersecurity team of XYZ Corp. plans to
+assess their organization’s preparedness for a potential data
+breach. They aim to evaluate the effectiveness of their response
+strategy without performing any real actions. Which of the
+following methods would BEST help them achieve this goal?</strong>
+<div class="options">
+<label><input name="q93" type="radio" value="A"/> A. Live fire exercise</label><br/>
+<label><input name="q93" type="radio" value="B"/> B. System hardening test</label><br/>
+<label><input name="q93" type="radio" value="C"/> C. Red team/blue team exercise</label><br/>
+<label><input name="q93" type="radio" value="D"/> D. Tabletop exercise</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="93" type="button">Check Answer</button></div>
+<div class="explanation" id="exp93"><strong>Answer: D.</strong> Tabletop exercise. A</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 454. A financial company is designing a new system
+that needs to ensure data is accessed based on classifications
+and clearance levels of the users. Which of the following access
+control models BEST fits this requirement?</strong>
+<div class="options">
+<label><input name="q94" type="radio" value="A"/> A. Role-Based Access Control (RBAC)</label><br/>
+<label><input name="q94" type="radio" value="B"/> B. Discretionary Access Control (DAC)</label><br/>
+<label><input name="q94" type="radio" value="C"/> C. Mandatory Access Control (MAC)</label><br/>
+<label><input name="q94" type="radio" value="D"/> D. Attribute-Based Access Control (ABAC)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="94" type="button">Check Answer</button></div>
+<div class="explanation" id="exp94"><strong>Answer: C.</strong> Mandatory Access</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 461. RedFlare Solutions, a financial firm, is storing
+sensitive client data in a database. The Chief Information
+Security Officer (CISO) insists that the data should be
+unreadable even if it’s intercepted during transmission or if the
+storage is compromised. Which encryption standard would best
+serve this requirement?</strong>
+<div class="options">
+<label><input name="q95" type="radio" value="A"/> A. Symmetric encryption using a shared key</label><br/>
+<label><input name="q95" type="radio" value="B"/> B. Hashing the data with a one-way function</label><br/>
+<label><input name="q95" type="radio" value="C"/> C. Encrypting the entire database using transparent data
+encryption</label><br/>
+<label><input name="q95" type="radio" value="D"/> D. Storing the data in a proprietary format</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="95" type="button">Check Answer</button></div>
+<div class="explanation" id="exp95"><strong>Answer: C.</strong> Encrypting the entire</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 462. GlobalTech, a software development company, is
+entering into a partnership with WebSolutions, a web hosting
+provider. They aim to create a standard set of terms governing
+their ongoing business transactions, including payment terms,
+delivery protocols, and warranties. Which type of agreement is
+most suitable for establishing these foundational terms for
+future transactions?</strong>
+<div class="options">
+<label><input name="q96" type="radio" value="A"/> A. Memorandum of understanding (MOU)</label><br/>
+<label><input name="q96" type="radio" value="B"/> B. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q96" type="radio" value="C"/> C. Licensing agreement</label><br/>
+<label><input name="q96" type="radio" value="D"/> D. Master service agreement (MSA)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="96" type="button">Check Answer</button></div>
+<div class="explanation" id="exp96"><strong>Answer: D.</strong> Master service</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 463. TechCorp is implementing a new cloud-based
+solution. The security team has been tasked with analyzing the
+risks associated with this project. They’ve decided to categorize
+the risks based on their potential impact levels: Low, Medium,
+High, and Critical. Which type of risk analysis is TechCorp’s
+security team employing?</strong>
+<div class="options">
+<label><input name="q97" type="radio" value="A"/> A. Quantitative</label><br/>
+<label><input name="q97" type="radio" value="B"/> B. Statistical</label><br/>
+<label><input name="q97" type="radio" value="C"/> C. Qualitative</label><br/>
+<label><input name="q97" type="radio" value="D"/> D. Financial</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="97" type="button">Check Answer</button></div>
+<div class="explanation" id="exp97"><strong>Answer: C.</strong> Qualitative. Qualitative</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 466. CyberSecure Inc. is evaluating the financial
+impact of a potential security breach on its main server. The
+company has estimated that a breach of this server would lead
+to a direct financial loss of $500,000 due to data recovery, legal
+fees, and fines. Which of the following best represents this
+estimation?</strong>
+<div class="options">
+<label><input name="q98" type="radio" value="A"/> A. Annual Rate of Occurrence (ARO)</label><br/>
+<label><input name="q98" type="radio" value="B"/> B. Total Cost of Ownership (TCO)</label><br/>
+<label><input name="q98" type="radio" value="C"/> C. Single Loss Expectancy (SLE)</label><br/>
+<label><input name="q98" type="radio" value="D"/> D. Annualized Loss Expectancy (ALE)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="98" type="button">Check Answer</button></div>
+<div class="explanation" id="exp98"><strong>Answer: C.</strong> Single Loss</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 470. WebServ Corp., a web hosting company, has
+been analyzing the reliability of its servers. They found that one
+of their server models, on average, tends to fail once every 2000
+hours and then gets promptly repaired. Which of the following
+metrics is WebServ Corp. evaluating?</strong>
+<div class="options">
+<label><input name="q99" type="radio" value="A"/> A. Recovery Time Objective (RTO)</label><br/>
+<label><input name="q99" type="radio" value="B"/> B. Mean Time To Repair (MTTR)</label><br/>
+<label><input name="q99" type="radio" value="C"/> C. Mean Time Between Failures (MTBF)</label><br/>
+<label><input name="q99" type="radio" value="D"/> D. Recovery Point Objective (RPO)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="99" type="button">Check Answer</button></div>
+<div class="explanation" id="exp99"><strong>Answer: C.</strong> Mean Time Between</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 471. TechFusion Inc. is a well-established technology
+company that has been in the market for over 15 years.
+Recently, the board of directors decided that the company will
+pursue aggressive growth strategies by entering new, untested
+markets and launching cutting-edge products, even if these
+strategies come with significant risks. How would you classify
+TechFusion Inc.’s risk appetite?</strong>
+<div class="options">
+<label><input name="q100" type="radio" value="A"/> A. Conservative</label><br/>
+<label><input name="q100" type="radio" value="B"/> B. Expansionary</label><br/>
+<label><input name="q100" type="radio" value="C"/> C. Neutral</label><br/>
+<label><input name="q100" type="radio" value="D"/> D. Risk-averse</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="100" type="button">Check Answer</button></div>
+<div class="explanation" id="exp100"><strong>Answer: B.</strong> Expansionary.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 472. After a significant merger between two large
+corporations, a comprehensive risk assessment was conducted
+to identify potential security gaps within the combined
+infrastructure. This assessment was exclusive to the merger and
+was not planned to be repeated in the future. What type of risk
+assessment was this?</strong>
+<div class="options">
+<label><input name="q101" type="radio" value="A"/> A. Recurring</label><br/>
+<label><input name="q101" type="radio" value="B"/> B. Continuous</label><br/>
+<label><input name="q101" type="radio" value="C"/> C. One-time</label><br/>
+<label><input name="q101" type="radio" value="D"/> D. Dynamic</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="101" type="button">Check Answer</button></div>
+<div class="explanation" id="exp101"><strong>Answer: C.</strong> One-time. A one-time</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 473. AcmeTech, a software development firm,
+recently experienced a major data breach that was traced back
+to a vulnerability in their custom-built application. Post-incident
+analysis revealed that the vulnerability had been introduced
+during the coding phase and was never detected during testing.
+To avoid such vulnerabilities in the future, which policy should
+AcmeTech emphasize to ensure secure practices are maintained
+throughout the development process?</strong>
+<div class="options">
+<label><input name="q102" type="radio" value="A"/> A. Incident Response Policy</label><br/>
+<label><input name="q102" type="radio" value="B"/> B. Change Management Policy</label><br/>
+<label><input name="q102" type="radio" value="C"/> C. Business Continuity Policy</label><br/>
+<label><input name="q102" type="radio" value="D"/> D. Software Development Lifecycle (SDLC) Policy</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="102" type="button">Check Answer</button></div>
+<div class="explanation" id="exp102"><strong>Answer: D.</strong> Software Development</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 476. After a recent security breach, CyberSolutions
+Inc. evaluated their response metrics and determined that, on
+average, it took 4 hours from identifying a security breach to
+having it completely resolved. Which metric best describes this
+4-hour timeframe?</strong>
+<div class="options">
+<label><input name="q103" type="radio" value="A"/> A. Recovery Time Objective (RTO)</label><br/>
+<label><input name="q103" type="radio" value="B"/> B. Recovery Point Objective (RPO)</label><br/>
+<label><input name="q103" type="radio" value="C"/> C. Mean Time Between Failures (MTBF)</label><br/>
+<label><input name="q103" type="radio" value="D"/> D. Mean Time To Repair (MTTR)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="103" type="button">Check Answer</button></div>
+<div class="explanation" id="exp103"><strong>Answer: D.</strong> Mean Time To Repair</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 478. During an audit review at NetSecure Corp., the
+external auditors observed that the company is willing to take
+risks that can potentially result in a 10% decrease in their annual
+profits, but no more than that. The auditors want to document
+this finding in their report. Which term should they use to
+describe NetSecure Corp.’s stance?</strong>
+<div class="options">
+<label><input name="q104" type="radio" value="A"/> A. Risk Avoidance</label><br/>
+<label><input name="q104" type="radio" value="B"/> B. Risk Transfer</label><br/>
+<label><input name="q104" type="radio" value="C"/> C. Risk Tolerance</label><br/>
+<label><input name="q104" type="radio" value="D"/> D. Risk Assessment</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="104" type="button">Check Answer</button></div>
+<div class="explanation" id="exp104"><strong>Answer: C.</strong> Risk Tolerance. Risk</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 479. TechGuard Corp. conducts a risk assessment
+every six months to identify new vulnerabilities and ensure that
+previous risk-mitigation strategies remain effective. This type of
+risk assessment is best described as:</strong>
+<div class="options">
+<label><input name="q105" type="radio" value="A"/> A. Periodic</label><br/>
+<label><input name="q105" type="radio" value="B"/> B. Ad hoc</label><br/>
+<label><input name="q105" type="radio" value="C"/> C. Continuous</label><br/>
+<label><input name="q105" type="radio" value="D"/> D. Recurring</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="105" type="button">Check Answer</button></div>
+<div class="explanation" id="exp105"><strong>Answer: D.</strong> Recurring. Recurring</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 484. A global e-commerce company maintains a risk
+register to keep track of identified risks and to monitor specific
+metrics that might indicate an increased risk level. Recently,
+there has been a 20% increase in abandoned shopping carts on
+their platform. How should this metric be categorized in the
+context of the risk register?</strong>
+<div class="options">
+<label><input name="q106" type="radio" value="A"/> A. Risk Appetite</label><br/>
+<label><input name="q106" type="radio" value="B"/> B. Risk Mitigation Strategy</label><br/>
+<label><input name="q106" type="radio" value="C"/> C. Key Risk Indicator (KRI)</label><br/>
+<label><input name="q106" type="radio" value="D"/> D. Risk Tolerance Threshold</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="106" type="button">Check Answer</button></div>
+<div class="explanation" id="exp106"><strong>Answer: C.</strong> Key Risk Indicator</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 485. A financial institution has reported that they
+experience an average of 3 phishing attacks every year that
+attempt to compromise their user data. Based on this data, what
+is the Annualized Rate of Occurrence (ARO) for these phishing
+attacks?</strong>
+<div class="options">
+<label><input name="q107" type="radio" value="A"/> A. 0.33</label><br/>
+<label><input name="q107" type="radio" value="B"/> B. 1</label><br/>
+<label><input name="q107" type="radio" value="C"/> C. 3</label><br/>
+<label><input name="q107" type="radio" value="D"/> D. 12</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="107" type="button">Check Answer</button></div>
+<div class="explanation" id="exp107"><strong>Answer: C.</strong> 3. The Annualized Rate</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 488. Your organization is considering a partnership
+with TechVendor Inc., a software solution provider. Before
+finalizing the agreement, you wish to ensure their application’s
+security. What would be the most direct method to assess the
+robustness of their system against potential cyber threats?</strong>
+<div class="options">
+<label><input name="q108" type="radio" value="A"/> A. Conducting an internal security awareness training</label><br/>
+<label><input name="q108" type="radio" value="B"/> B. Reviewing their past audit reports</label><br/>
+<label><input name="q108" type="radio" value="C"/> C. Implementing strict firewall rules</label><br/>
+<label><input name="q108" type="radio" value="D"/> D. Performing a penetration test on their application.</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="108" type="button">Check Answer</button></div>
+<div class="explanation" id="exp108"><strong>Answer: D.</strong> Performing a</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 491. XYZ Corp is in the process of defining clear
+roles and responsibilities for their IT assets. During a meeting,
+the team discussed the primary individual who will have the
+responsibility for the data within a specific IT system and also
+be the main point of contact for any decisions related to it.
+Which of the following roles best describes this individual?</strong>
+<div class="options">
+<label><input name="q109" type="radio" value="A"/> A. System administrator</label><br/>
+<label><input name="q109" type="radio" value="B"/> B. Data custodian</label><br/>
+<label><input name="q109" type="radio" value="C"/> C. System owner</label><br/>
+<label><input name="q109" type="radio" value="D"/> D. End-user</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="109" type="button">Check Answer</button></div>
+<div class="explanation" id="exp109"><strong>Answer: C.</strong> System owner. The</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 492. As the Chief Security Officer (CSO) of
+AlphaTech, you are in the process of finalizing a partnership
+agreement with a third-party provider. To ensure ongoing
+security compliance and transparency, you want to reserve the
+right for your organization to inspect the vendor’s operations
+and security measures in the future. Which clause should you
+ensure is included in the contract?</strong>
+<div class="options">
+<label><input name="q110" type="radio" value="A"/> A. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q110" type="radio" value="B"/> B. Service level agreement (SLA)</label><br/>
+<label><input name="q110" type="radio" value="C"/> C. Termination clause</label><br/>
+<label><input name="q110" type="radio" value="D"/> D. Right-to-audit clause</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="110" type="button">Check Answer</button></div>
+<div class="explanation" id="exp110"><strong>Answer: D.</strong> Right-to-audit clause.</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 493. CyberGuard LLC, a cybersecurity firm, is in a
+stable position in its industry with consistent returns. The
+leadership decides not to pursue aggressive growth strategies
+but instead chooses to maintain its current market share and
+operational scale. They are open to minor risks but avoid major
+disruptions. How can one best describe CyberGuard LLC’s risk
+appetite?</strong>
+<div class="options">
+<label><input name="q111" type="radio" value="A"/> A. Expansionary</label><br/>
+<label><input name="q111" type="radio" value="B"/> B. Neutral</label><br/>
+<label><input name="q111" type="radio" value="C"/> C. Conservative</label><br/>
+<label><input name="q111" type="radio" value="D"/> D. Aggressive</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="111" type="button">Check Answer</button></div>
+<div class="explanation" id="exp111"><strong>Answer: B.</strong> Neutral. A neutral risk</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 494. Two university research departments, UniAlpha
+and UniBeta, decide to collaborate on a project exploring
+quantum computing’s security implications. They need an
+agreement to express mutual intentions without enforcing
+legally binding obligations. Which document is most suitable
+for their needs?</strong>
+<div class="options">
+<label><input name="q112" type="radio" value="A"/> A. Service-level agreement (SLA)</label><br/>
+<label><input name="q112" type="radio" value="B"/> B. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q112" type="radio" value="C"/> C. Memorandum of understanding (MOU)</label><br/>
+<label><input name="q112" type="radio" value="D"/> D. Licensing agreement</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="112" type="button">Check Answer</button></div>
+<div class="explanation" id="exp112"><strong>Answer: C.</strong> Memorandum of</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 496. AcmeBank recently performed a business impact
+analysis for its online banking system. The result indicated that
+the bank could tolerate a maximum downtime of 4 hours for the
+system before incurring significant financial losses and
+customer dissatisfaction. Which concept best describes this 4-
+hour period?</strong>
+<div class="options">
+<label><input name="q113" type="radio" value="A"/> A. Recovery Point Objective (RPO)</label><br/>
+<label><input name="q113" type="radio" value="B"/> B. Maximum Tolerable Downtime (MTD)</label><br/>
+<label><input name="q113" type="radio" value="C"/> C. Recovery Time Objective (RTO)</label><br/>
+<label><input name="q113" type="radio" value="D"/> D. Time To Restore (TTR)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="113" type="button">Check Answer</button></div>
+<div class="explanation" id="exp113"><strong>Answer: C.</strong> Recovery Time</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 497. DigitalZone Corp, a marketing company,
+collects personal data from users and determines how and why
+that data will be processed. At the same time, they engage an
+external company, CloudSolutions, to store and manage this
+data. In this scenario, what role does DigitalZone Corp play in
+relation to data protection regulations?</strong>
+<div class="options">
+<label><input name="q114" type="radio" value="A"/> A. Processor</label><br/>
+<label><input name="q114" type="radio" value="B"/> B. Data subject</label><br/>
+<label><input name="q114" type="radio" value="C"/> C. Controller</label><br/>
+<label><input name="q114" type="radio" value="D"/> D. Third-party provider</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="114" type="button">Check Answer</button></div>
+<div class="explanation" id="exp114"><strong>Answer: C.</strong> Controller. DigitalZone</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 498. TechFirm Inc. has decided to engage in a new
+business venture. Before they move forward, the security team
+conducts several brainstorming sessions, interviews, and
+reviews historical data to generate a list of potential security
+threats that the new venture could face. This activity is a
+primary component of which step in the risk management
+process?</strong>
+<div class="options">
+<label><input name="q115" type="radio" value="A"/> A. Risk assessment</label><br/>
+<label><input name="q115" type="radio" value="B"/> B. Risk response</label><br/>
+<label><input name="q115" type="radio" value="C"/> C. Risk monitoring</label><br/>
+<label><input name="q115" type="radio" value="D"/> D. Risk identification</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="115" type="button">Check Answer</button></div>
+<div class="explanation" id="exp115"><strong>Answer: D.</strong> Risk identification.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 503. TechFusion and CodeRush, two independent
+software development companies, are collaborating on a project
+that is expected to define industry standards for a new coding
+language. While both parties have an understanding of shared
+responsibilities, they have not yet established legally binding
+obligations. Which type of agreement best suits their current
+collaborative understanding?</strong>
+<div class="options">
+<label><input name="q116" type="radio" value="A"/> A. Service-level agreement (SLA)</label><br/>
+<label><input name="q116" type="radio" value="B"/> B. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q116" type="radio" value="C"/> C. Memorandum of agreement (MOA)</label><br/>
+<label><input name="q116" type="radio" value="D"/> D. Licensing agreement</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="116" type="button">Check Answer</button></div>
+<div class="explanation" id="exp116"><strong>Answer: C.</strong> Memorandum of</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 505. CyberTech Inc., a cybersecurity consulting
+company, is in discussions with a potential client, MedCorp, to
+assist in developing a new secure medical records system.
+MedCorp will be sharing sensitive patient data with CyberTech
+as part of the process. Which agreement should be in place
+before the sharing of such information to ensure confidentiality?</strong>
+<div class="options">
+<label><input name="q117" type="radio" value="A"/> A. Memorandum of understanding (MOU)</label><br/>
+<label><input name="q117" type="radio" value="B"/> B. Service-level agreement (SLA)</label><br/>
+<label><input name="q117" type="radio" value="C"/> C. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q117" type="radio" value="D"/> D. Work order (WO)/statement of work (SOW)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="117" type="button">Check Answer</button></div>
+<div class="explanation" id="exp117"><strong>Answer: C.</strong> Non-disclosure</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 507. WhiteCape Healthcare, an international
+healthcare provider, has a large patient database that includes
+many EU citizens. They’re about to implement a new system to
+improve data access for physicians. Which of the following
+regulatory requirements should they pay particular attention to
+when granting physicians access to EU patient data?</strong>
+<div class="options">
+<label><input name="q118" type="radio" value="A"/> A. Ensure data is only accessed for tax reporting purposes</label><br/>
+<label><input name="q118" type="radio" value="B"/> B. Acquire explicit consent from patients before sharing
+data</label><br/>
+<label><input name="q118" type="radio" value="C"/> C. Encrypt all data using a proprietary algorithm</label><br/>
+<label><input name="q118" type="radio" value="D"/> D. Store data in a physical server located within the EU</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="118" type="button">Check Answer</button></div>
+<div class="explanation" id="exp118"><strong>Answer: B.</strong> Acquire explicit</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 508. WebFlix, a popular online movie streaming
+service, experienced a data center outage due to a natural
+disaster. They had backups in place and restored their systems
+using data from 6 hours prior to the outage. This resulted in the
+loss of some user interactions, like ratings and watchlists from
+the last 6 hours. What term describes the 6-hour gap between
+the last backup and the time of the outage?</strong>
+<div class="options">
+<label><input name="q119" type="radio" value="A"/> A. Recovery Time Objective (RTO)</label><br/>
+<label><input name="q119" type="radio" value="B"/> B. Maximum Tolerable Downtime (MTD)</label><br/>
+<label><input name="q119" type="radio" value="C"/> C. Recovery Duration Period (RDP)</label><br/>
+<label><input name="q119" type="radio" value="D"/> D. Recovery Point Objective (RPO)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="119" type="button">Check Answer</button></div>
+<div class="explanation" id="exp119"><strong>Answer: D.</strong> Recovery Point</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 515. Emily, a cybersecurity analyst, has been tasked
+with gathering preliminary information about a target
+organization without directly interacting with its systems. She
+decides to collect data from third-party sources, search engines,
+public records, and other online platforms without sending any
+packets to the target. Which phase of penetration testing is
+Emily currently engaged in?</strong>
+<div class="options">
+<label><input name="q120" type="radio" value="A"/> A. Active reconnaissance</label><br/>
+<label><input name="q120" type="radio" value="B"/> B. Passive reconnaissance</label><br/>
+<label><input name="q120" type="radio" value="C"/> C. Vulnerability scanning</label><br/>
+<label><input name="q120" type="radio" value="D"/> D. Threat hunting</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="120" type="button">Check Answer</button></div>
+<div class="explanation" id="exp120"><strong>Answer: B.</strong> Passive</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 516. As part of an initial penetration testing phase,
+Jackson is using tools that directly probe and interact with the
+target system’s network to discover open ports, services, and
+other potential access points. While this approach is more direct
+and could be detected by the target’s security systems, it
+provides detailed and actionable insights. Which type of
+reconnaissance is Jackson performing?</strong>
+<div class="options">
+<label><input name="q121" type="radio" value="A"/> A. Threat analysis</label><br/>
+<label><input name="q121" type="radio" value="B"/> B. Passive reconnaissance</label><br/>
+<label><input name="q121" type="radio" value="C"/> C. Active reconnaissance</label><br/>
+<label><input name="q121" type="radio" value="D"/> D. Social engineering</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="121" type="button">Check Answer</button></div>
+<div class="explanation" id="exp121"><strong>Answer: C.</strong> Active reconnaissance.</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 517. TechFirm, a leading technology conglomerate,
+recently conducted a security exercise. The goal was for the
+internal security team to defend against a series of simulated
+attacks from an external red team. While the red team launched
+attacks, the internal team’s objective was to detect, respond, and
+mitigate those threats. What type of penetration testing is
+TechFirm employing for its internal security team?</strong>
+<div class="options">
+<label><input name="q122" type="radio" value="A"/> A. Offensive penetration testing</label><br/>
+<label><input name="q122" type="radio" value="B"/> B. Passive penetration testing</label><br/>
+<label><input name="q122" type="radio" value="C"/> C. Defensive penetration testing</label><br/>
+<label><input name="q122" type="radio" value="D"/> D. Black box testing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="122" type="button">Check Answer</button></div>
+<div class="explanation" id="exp122"><strong>Answer: C.</strong> Defensive penetration</div>
+</div>
+<div class="question" data-answer="A">
+<strong>Question 518. Emily, an executive assistant, receives a phone
+call from an individual claiming to be a new employee in the IT
+department. The caller says they’re conducting a routine check
+and needs Emily to confirm her username and password for
+system verification. How should Emily respond?</strong>
+<div class="options">
+<label><input name="q123" type="radio" value="A"/> A. Politely decline and report the call to the IT department</label><br/>
+<label><input name="q123" type="radio" value="B"/> B. Provide the caller with the username but not the
+password</label><br/>
+<label><input name="q123" type="radio" value="C"/> C. Ask the caller to email the request, so there's a written
+record</label><br/>
+<label><input name="q123" type="radio" value="D"/> D. Hang up without saying anything</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="123" type="button">Check Answer</button></div>
+<div class="explanation" id="exp123"><strong>Answer: A.</strong> Politely decline and</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 522. SafeNet, a financial institution, decided to
+undertake a comprehensive security assessment. They brought
+together their internal security team and an external group of
+ethical hackers. Their objective was for these teams to
+collaboratively assess vulnerabilities, perform real-time attack
+simulations, and evaluate defense mechanisms. What form of
+penetration testing is SafeNet utilizing?</strong>
+<div class="options">
+<label><input name="q124" type="radio" value="A"/> A. Black box testing</label><br/>
+<label><input name="q124" type="radio" value="B"/> B. Integrated penetration testing</label><br/>
+<label><input name="q124" type="radio" value="C"/> C. Defensive penetration testing</label><br/>
+<label><input name="q124" type="radio" value="D"/> D. Red team assessment</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="124" type="button">Check Answer</button></div>
+<div class="explanation" id="exp124"><strong>Answer: B.</strong> Integrated penetration</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 523. AlphaTech, a leading tech manufacturer, is
+considering a penetration test to identify vulnerabilities in their
+new product’s firmware. They provide the testers with firmware
+source code, architecture diagrams, and other internal details to
+ensure a thorough evaluation. What kind of penetration test is
+AlphaTech commissioning?</strong>
+<div class="options">
+<label><input name="q125" type="radio" value="A"/> A. Zero-knowledge testing</label><br/>
+<label><input name="q125" type="radio" value="B"/> B. Open box testing</label><br/>
+<label><input name="q125" type="radio" value="C"/> C. Opaque testing</label><br/>
+<label><input name="q125" type="radio" value="D"/> D. Blind testing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="125" type="button">Check Answer</button></div>
+<div class="explanation" id="exp125"><strong>Answer: B.</strong> Open box testing.</div>
+</div>
+<div class="question" data-answer="D">
+<strong>Question 525. WebMasters LLC, a popular web hosting
+company, wants to ensure the robust security of their hosted
+websites. They initiate a security challenge, inviting ethical
+hackers worldwide to find vulnerabilities without giving any
+details about their servers, databases, or applications. Which
+penetration testing method is WebMasters LLC utilizing?</strong>
+<div class="options">
+<label><input name="q126" type="radio" value="A"/> A. External testing</label><br/>
+<label><input name="q126" type="radio" value="B"/> B. Grey box testing</label><br/>
+<label><input name="q126" type="radio" value="C"/> C. Active testing</label><br/>
+<label><input name="q126" type="radio" value="D"/> D. Black box testing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="126" type="button">Check Answer</button></div>
+<div class="explanation" id="exp126"><strong>Answer: D.</strong> Black box testing. In</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 531. A medium-sized organization recently had a
+third-party auditor review their information security controls.
+After the review, the auditor provided a formal statement that
+verified the effectiveness of the controls in place. What is this
+formal statement referred to as?</strong>
+<div class="options">
+<label><input name="q127" type="radio" value="A"/> A. Certification</label><br/>
+<label><input name="q127" type="radio" value="B"/> B. Accreditation</label><br/>
+<label><input name="q127" type="radio" value="C"/> C. Attestation</label><br/>
+<label><input name="q127" type="radio" value="D"/> D. Assurance</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="127" type="button">Check Answer</button></div>
+<div class="explanation" id="exp127"><strong>Answer: C.</strong> Attestation. An</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 533. TechGuard Inc. and CloudSecure are two
+cybersecurity firms that are considering a collaboration on a
+new cloud security project. Both companies have proprietary
+technologies and methodologies they will bring into the
+partnership. Before embarking on the collaborative venture,
+which agreement should they finalize to define the terms of
+their partnership, roles, and shared responsibilities?</strong>
+<div class="options">
+<label><input name="q128" type="radio" value="A"/> A. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q128" type="radio" value="B"/> B. Service-level agreement (SLA)</label><br/>
+<label><input name="q128" type="radio" value="C"/> C. Business partners agreement (BPA)</label><br/>
+<label><input name="q128" type="radio" value="D"/> D. Memorandum of understanding (MOU)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="128" type="button">Check Answer</button></div>
+<div class="explanation" id="exp128"><strong>Answer: C.</strong> Business partners</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 535. A cybersecurity firm has been hired by
+TechGiant Corp. to perform penetration testing on their
+infrastructure. Before the testing begins, the CEO of TechGiant
+Corp. wants to ensure that certain critical systems are not
+targeted, and that the testing will not disrupt their ongoing
+operations. What should be established to define the scope and
+boundaries of the test?</strong>
+<div class="options">
+<label><input name="q129" type="radio" value="A"/> A. Service-level agreement (SLA)</label><br/>
+<label><input name="q129" type="radio" value="B"/> B. Non-disclosure agreement (NDA)</label><br/>
+<label><input name="q129" type="radio" value="C"/> C. Rules of engagement (ROE)</label><br/>
+<label><input name="q129" type="radio" value="D"/> D. Memorandum of understanding (MOU)</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="129" type="button">Check Answer</button></div>
+<div class="explanation" id="exp129"><strong>Answer: C.</strong> Rules of engagement</div>
+</div>
+<div class="question" data-answer="C">
+<strong>Question 537. A healthcare provider wants to evaluate the
+security of their patient portal. They inform the penetration
+testers about the technologies used, such as the programming
+languages and databases. However, specifics about the security
+measures in place, including intrusion detection systems, are
+687
+kept secret. What kind of penetration test are they aiming for?</strong>
+<div class="options">
+<label><input name="q130" type="radio" value="A"/> A. White box testing</label><br/>
+<label><input name="q130" type="radio" value="B"/> B. External testing</label><br/>
+<label><input name="q130" type="radio" value="C"/> C. Grey box testing</label><br/>
+<label><input name="q130" type="radio" value="D"/> D. Active testing</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="130" type="button">Check Answer</button></div>
+<div class="explanation" id="exp130"><strong>Answer: C.</strong> Grey box testing. Grey</div>
+</div>
+<div class="question" data-answer="B">
+<strong>Question 538. TechFirm Inc. collects personal data from its
+users and decides on the purposes and means of processing this
+data. They also outsource data storage to CloudData, a thirdparty
+company. In the context of data privacy regulations, how
+would TechFirm and CloudData be classified respectively?</strong>
+<div class="options">
+<label><input name="q131" type="radio" value="A"/> A. TechFirm: Processor; CloudData: Controller</label><br/>
+<label><input name="q131" type="radio" value="B"/> B. TechFirm: Controller; CloudData: Processor</label><br/>
+<label><input name="q131" type="radio" value="C"/> C. Both TechFirm and CloudData: Processors</label><br/>
+<label><input name="q131" type="radio" value="D"/> D. Both TechFirm and CloudData: Controllers</label>
+</div>
+<div style="margin-top:8px"><button class="checkBtn" data-q="131" type="button">Check Answer</button></div>
+<div class="explanation" id="exp131"><strong>Answer: B.</strong> TechFirm: Controller;</div>
+</div>
+</form>
+<script>
+    // Build a live list of question elements (preserves DOM order)
+    const questions = Array.from(document.querySelectorAll('.question[data-answer]'));
+    const total = questions.length;
     document.getElementById('total').textContent = total;
 
-    function grade(showExplanations = false) {
+    // Helper: find the radio group name for a question element
+    function groupNameForQuestion(qElem) {
+      const input = qElem.querySelector('input[type=radio]');
+      return input ? input.name : null;
+    }
+
+    // Compute overall score based on current selections and update scoreboard
+    function computeScore() {
       let score = 0;
-      for (let i = 1; i <= total; i++) {
-        const q = document.querySelector(`.question[data-answer]:nth-of-type(${i})`);
+      questions.forEach(q => {
         const correct = q.getAttribute('data-answer');
-        const selected = document.querySelector(`input[name=q${i}]:checked`);
-        const exp = document.getElementById('exp' + i);
-        exp.style.display = 'none';
-        q.classList.remove('correct','incorrect');
-        if (selected) {
-          if (selected.value === correct) {
-            score++;
-            q.classList.add('correct');
-          } else {
-            q.classList.add('incorrect');
-          }
-        } else {
-          q.classList.add('incorrect');
-        }
-        if (showExplanations) exp.style.display = 'block';
-      }
+        const group = groupNameForQuestion(q);
+        if (!group) return;
+        const selected = document.querySelector(`input[name="${group}"]:checked`);
+        if (selected && selected.value === correct) score++;
+      });
       document.getElementById('score').textContent = score;
+      const pct = total > 0 ? Math.round((score / total) * 100) : 0;
       const feedback = document.getElementById('feedback');
-      const pct = Math.round((score/total)*100);
       let msg = '';
       if (pct === 100) msg = 'Perfect score — well done!';
       else if (pct >= 80) msg = 'Great job — near perfect.';
       else if (pct >= 50) msg = 'Good effort — keep studying.';
       else msg = 'Needs improvement — review the explanations.';
       feedback.textContent = `${msg} (${pct}%)`;
-      return score;
+    }
+
+    // Grade (or reveal) a single question by its numeric id (suffix) and update classes
+    function gradeSingleById(idSuffix, reveal = true) {
+      const exp = document.getElementById('exp' + idSuffix);
+      const q = exp ? exp.closest('.question') : document.querySelector(`.question input[name="q${idSuffix}"]`)?.closest('.question');
+      if (!q) return;
+      const correct = q.getAttribute('data-answer');
+      const group = groupNameForQuestion(q);
+      const selected = group ? document.querySelector(`input[name="${group}"]:checked`) : null;
+      q.classList.remove('correct', 'incorrect');
+      if (selected) {
+        if (selected.value === correct) q.classList.add('correct');
+        else q.classList.add('incorrect');
+      } else {
+        q.classList.add('incorrect');
+      }
+      if (reveal && exp) exp.style.display = 'block';
+      computeScore();
+    }
+
+    // Grade all questions; optionally reveal all explanations
+    function gradeAll(showExplanations = false) {
+      questions.forEach(q => {
+        const correct = q.getAttribute('data-answer');
+        const group = groupNameForQuestion(q);
+        const selected = group ? document.querySelector(`input[name="${group}"]:checked`) : null;
+        q.classList.remove('correct', 'incorrect');
+        if (selected) {
+          if (selected.value === correct) q.classList.add('correct');
+          else q.classList.add('incorrect');
+        } else {
+          q.classList.add('incorrect');
+        }
+        const exp = q.querySelector('.explanation');
+        if (exp) exp.style.display = showExplanations ? 'block' : 'none';
+      });
+      computeScore();
     }
 
     document.getElementById('submitBtn').addEventListener('click', () => {
-      grade(false);
+      gradeAll(false);
     });
 
     document.getElementById('showAnswersBtn').addEventListener('click', () => {
-      grade(true);
-      // scroll to first explanation
+      gradeAll(true);
       const firstExp = document.querySelector('.explanation');
-      if (firstExp) firstExp.scrollIntoView({behavior: 'smooth'});
+      if (firstExp) firstExp.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Bind per-question check buttons. Use the button's data-q suffix to find the
+    // matching explanation/question instead of relying on DOM nth-of-type.
+    document.querySelectorAll('.checkBtn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const qi = btn.getAttribute('data-q');
+        if (!qi) return;
+        gradeSingleById(qi, true);
+        const exp = document.getElementById('exp' + qi);
+        if (exp) exp.scrollIntoView({ behavior: 'smooth' });
+      });
     });
 
     document.getElementById('resetBtn').addEventListener('click', () => {
       document.getElementById('quizForm').reset();
-      for (let i = 1; i <= total; i++) {
-        const q = document.querySelector(`.question:nth-of-type(${i})`);
-        const exp = document.getElementById('exp' + i);
-        exp.style.display = 'none';
-        q.classList.remove('correct','incorrect');
-      }
+      questions.forEach(q => {
+        const exp = q.querySelector('.explanation');
+        if (exp) exp.style.display = 'none';
+        q.classList.remove('correct', 'incorrect');
+      });
       document.getElementById('score').textContent = 0;
       document.getElementById('feedback').textContent = '';
     });
